@@ -37,7 +37,7 @@
   </a>
 
   <a href="https://www.python.org" target="_blank">
-    <img alt="Scikit" src="https://img.shields.io/badge/python-ffdc00?style=for-the-badge&logo=python&logoColor=white">
+    <img alt="Scikit" src="https://img.shields.io/badge/python-ffdc00?style=for-the-badge&logo=python&logoColor=blue">
   </a>
 
 <h2> Github Stats (Expand to View) <img src = "https://i.pinimg.com/originals/65/c4/f4/65c4f452571be1261e9c623f7da488ac.gif" width = 35px> </h2>
