@@ -72,7 +72,7 @@
 </a>  
 
 
-<a href="https://github.com/pandhu-rendra/Auto-Responder">
+<a href="https://github.com/pandhu-rendra/overwrite-bot">
   <!-- Change the `github-readme-stats.anuraghazra1.vercel.app` to `github-readme-stats.vercel.app`  -->
   <img align="center" src="https://github-readme-stats.anuraghazra1.vercel.app/api/pin/?username=pandhu-rendra&repo=Auto-Responder&theme=onedark" />
 </a> 
