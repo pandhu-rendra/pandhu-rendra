@@ -1,8 +1,8 @@
-name: 🎵 Spotify Now Playing (README)
+name: "🎵 Spotify Now Playing (README)"
 
 on:
   schedule:
-    - cron: "*/15 * * * *"  # tiap 15 menit biar hemat menit Actions
+    - cron: "*/15 * * * *"  # update tiap 15 menit
   workflow_dispatch: {}
 
 permissions:
@@ -17,74 +17,72 @@ jobs:
 
       - name: Get access token from refresh token
         id: token
+        shell: bash
         env:
           SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
           SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
           SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
         run: |
-          set -e
-          AUTH=$(echo -n "$SPOTIFY_CLIENT_ID:$SPOTIFY_CLIENT_SECRET" | base64)
-          curl -s -X POST "https://accounts.spotify.com/api/token" \
+          set -euo pipefail
+          AUTH="$(printf '%s:%s' "$SPOTIFY_CLIENT_ID" "$SPOTIFY_CLIENT_SECRET" | base64 -w 0)"
+          curl -sS -X POST 'https://accounts.spotify.com/api/token' \
             -H "Authorization: Basic $AUTH" \
-            -H "Content-Type: application/x-www-form-urlencoded" \
+            -H 'Content-Type: application/x-www-form-urlencoded' \
             -d "grant_type=refresh_token&refresh_token=$SPOTIFY_REFRESH_TOKEN" > token.json
-          ACCESS_TOKEN=$(jq -r '.access_token' token.json)
-          if [ -z "$ACCESS_TOKEN" ] || [ "$ACCESS_TOKEN" = "null" ]; then
-            echo "Failed to get access token"; cat token.json; exit 1
-          fi
-          echo "ACCESS_TOKEN=$ACCESS_TOKEN" >> $GITHUB_ENV
+          ACCESS_TOKEN="$(jq -r '.access_token' token.json)"
+          test -n "$ACCESS_TOKEN"
+          echo "ACCESS_TOKEN=$ACCESS_TOKEN" >> "$GITHUB_ENV"
 
-      - name: Fetch currently playing (fallback to recently played)
+      - name: Fetch track JSON (current or recent)
+        shell: bash
         run: |
-          set -e
-          # 1) currently playing
-          curl -s -w "%{http_code}" -o cur.json \
-            -H "Authorization: Bearer $ACCESS_TOKEN" \
-            "https://api.spotify.com/v1/me/player/currently-playing" > code.txt
-          CODE=$(cat code.txt)
-
-          if [ "$CODE" = "200" ]; then
+          set -euo pipefail
+          code="$(curl -sS -w '%{http_code}' -o cur.json -H "Authorization: Bearer $ACCESS_TOKEN" 'https://api.spotify.com/v1/me/player/currently-playing')"
+          if [ "$code" = "200" ]; then
             SRC="current"
-            jq -r '.' cur.json > src.json
+            cp cur.json src.json
           else
-            # 2) fallback: most recently played track
             SRC="recent"
-            curl -s -H "Authorization: Bearer $ACCESS_TOKEN" \
-              "https://api.spotify.com/v1/me/player/recently-played?limit=1" > src.json
+            curl -sS -H "Authorization: Bearer $ACCESS_TOKEN" 'https://api.spotify.com/v1/me/player/recently-played?limit=1' > src.json
           fi
+          echo "SRC=$SRC" >> "$GITHUB_ENV"
 
-          # Extract fields (support both payload shapes)
-          NAME=$(jq -r '.item.name // .items[0].track.name // empty' src.json)
-          URL=$(jq -r '.item.external_urls.spotify // .items[0].track.external_urls.spotify // empty' src.json)
-          ARTISTS=$(jq -r '[.item.artists[]?.name] // [.items[0].track.artists[]?.name] | join(", ")' src.json)
-          IMG=$(jq -r '.item.album.images[1].url // .item.album.images[0].url // .items[0].track.album.images[1].url // .items[0].track.album.images[0].url // empty' src.json)
-          IS_PLAYING=$(jq -r '.is_playing // empty' src.json)
+      - name: Build HTML snippet
+        shell: bash
+        run: |
+          set -euo pipefail
+          NAME="$(jq -r '.item.name // .items[0].track.name // empty' src.json)"
+          URL="$(jq -r '.item.external_urls.spotify // .items[0].track.external_urls.spotify // empty' src.json)"
+          ARTISTS="$(jq -r '[.item.artists[]?.name] // [.items[0].track.artists[]?.name] | join(", ")' src.json)"
+          IMG="$(jq -r '.item.album.images[1].url // .item.album.images[0].url // .items[0].track.album.images[1].url // .items[0].track.album.images[0].url // empty' src.json)"
+          IS_PLAYING="$(jq -r '.is_playing // empty' src.json)"
 
-          # Escape special chars for HTML
           esc () { printf '%s' "$1" | sed 's/&/\&amp;/g; s/</\&lt;/g; s/>/\&gt;/g'; }
-          NAME_E=$(esc "$NAME"); ARTISTS_E=$(esc "$ARTISTS"); URL_E=$(esc "$URL"); IMG_E=$(esc "$IMG")
+          NAME_E="$(esc "$NAME")"
+          URL_E="$(esc "$URL")"
+          ARTISTS_E="$(esc "$ARTISTS")"
+          IMG_E="$(esc "$IMG")"
 
           if [ -z "$NAME_E" ] || [ -z "$URL_E" ]; then
-            HTML='<p align="center">Tidak ada data Spotify.</p>'
-          else
-            STATUS="Now Playing"
-            [ "$SRC" = "recent" ] && STATUS="Recently Played"
-            [ "$IS_PLAYING" = "true" ] && STATUS="Now Playing"
-
-            HTML=$(cat <<EOF
-<p align="center">
-  <a href="$URL_E"><img src="$IMG_E" height="96" style="border-radius:12px"/></a><br/>
-  <b><a href="$URL_E">$NAME_E</a></b><br/>
-  $ARTISTS_E<br/>
-  <sub>$STATUS</sub>
-</p>
-EOF
-)
+            printf '<p align="center">Tidak ada data Spotify.</p>\n' > spotify_snippet.html
+            exit 0
           fi
 
-          printf '%s\n' "$HTML" > spotify_snippet.html
+          STATUS="Recently Played"
+          [ "$IS_PLAYING" = "true" ] && STATUS="Now Playing"
+          [ "${SRC:-recent}" = "current" ] && STATUS="Now Playing"
+
+          {
+            printf '<p align="center">\n'
+            printf '  <a href="%s"><img src="%s" height="96" style="border-radius:12px"/></a><br/>\n' "$URL_E" "$IMG_E"
+            printf '  <b><a href="%s">%s</a></b><br/>\n' "$URL_E" "$NAME_E"
+            printf '  %s<br/>\n' "$ARTISTS_E"
+            printf '  <sub>%s</sub>\n' "$STATUS"
+            printf '</p>\n'
+          } > spotify_snippet.html
 
       - name: Inject snippet into README
+        shell: bash
         run: |
           awk '
             BEGIN{inblk=0}
@@ -96,6 +94,7 @@ EOF
       - name: Commit & push if changed
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
         run: |
           if [[ -n $(git status --porcelain) ]]; then
             git config user.name  "github-actions[bot]"
