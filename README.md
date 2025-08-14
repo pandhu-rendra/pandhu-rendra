@@ -110,7 +110,7 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 </p>
 
 <details>
-  <summary><b>More Stats (optional)</b></summary>
+  <summary><b>More Stats</b></summary>
   <br/>
   <p align="center">
     <img src="https://github-readme-activity-graph.vercel.app/graph?username=pandhu-rendra&theme=tokyo-night&area=true&area_color=8A2BE2&line=BC7CFF&point=8A2BE2" alt="activity-graph"/>
@@ -122,7 +122,7 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 
 ---
 
-## ⏱️ Coding Activity (WakaTime)
+## ⏱️ Coding Activity
 <p align="center">
   <!-- Opsi A: tanpa API key, pastikan profile WakaTime kamu public -->
   <img src="https://github-readme-stats.vercel.app/api/wakatime?username=rendraexe&title_color=8A2BE2&text_color=B8A8F9&bg_color=0D0A1A" height="280"/>
