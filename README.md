@@ -1,83 +1,71 @@
-<h1> Hello Fellow < Developers/ >! <img src = "https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width = 30px> </h1>
-<p align='center'>
+<h1 align="center">Hello Fellow < Developers/ >! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px"></h1>
+
+<p align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.herokuapp.com?font=IBM+Plex+Sans&pause=1000&color=3DDC84&width=500&lines=Welcome+to+my+GitHub+Profile;Student+at+SMP+Muhammadiyah+5+Yogyakarta;Beginner+Programmer+%F0%9F%92%BB" alt="Typing SVG" />
+  </a>
 </p>
 
-<p>
-	<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=IBM+Plex+Sans&pause=1000&random=false&width=460&lines=Welcome+to+my+Github+Profile;I'm+a+Student+at+SMP+Muhammadiyah+5+Yogyakarta;I'm+a+Beginner+Programmer" alt="Typing SVG" /></a>
+---
+
+### 🌐 Connect With Me
+<p align="center">
+  <a href="https://discord.com/users/941844949824069692"><img src="https://img.shields.io/badge/Discord-5165f6?style=for-the-badge&logo=discord&logoColor=white"></a>
+  <a href="https://www.tiktok.com/@renx.freya?_t=8jPWtEIHiJW&_r=1"><img src="https://img.shields.io/badge/TikTok-010101?style=for-the-badge&logo=tiktok&logoColor=white"></a>
+  <a href="https://instagram.com/pandhu.rendra"><img src="https://img.shields.io/badge/Instagram-a436b3?style=for-the-badge&logo=instagram&logoColor=white"></a>
+  <a href="https://github.com/pandhu-rendra"><img src="https://img.shields.io/badge/GitHub-333333?style=for-the-badge&logo=github&logoColor=white"></a>
 </p>
 
-   <a href="https://discord.com/users/941844949824069692" target="_blank">
-    <img alt="Discord" src="https://img.shields.io/badge/Discord-5165f6?style=for-the-badge&logo=discord&logoColor=white">
-  </a>   
-   <a href="https://www.tiktok.com/@renx.freya?_t=8jPWtEIHiJW&_r=1" target="_blank">
-    <img alt="TikTok" src="https://img.shields.io/badge/TikTok-010101?style=for-the-badge&logo=tiktok&logoColor=white">
-  </a>  
-  <a href="https://instagram.com/pandhu.rendra?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
-    <img alt="Instagram" src="https://img.shields.io/badge/Instagram-a436b3?style=for-the-badge&logo=instagram&logoColor=white">
-  </a>  
- <a href="https://github.com/pandhu-rendra" target="_blank">
-    <img alt="Github" src="https://img.shields.io/badge/Github-333333?style=for-the-badge&logo=github&logoColor=white">
-  </a>
+---
 
-- 👋 Hi, I’m Rendra
-- 💼 I'm a Student at SMP Muhammadiyah 5 Yogyaarta
-- 💬 Talk to me about Programming, Disign and Gaming
+### 👨‍💻 About Me
+- 👋 Hi, I’m **Rendra**
+- 🎓 Student at **SMP Muhammadiyah 5 Yogyakarta**
+- 💬 Interested in **Programming, Design, and Gaming**
+- 🌱 Currently learning **JavaScript, HTML, CSS, and Python**
 
-<h2> Skills <img src = "https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width = 32px> </h2>
-<a href="https://www.java.com" target="_blank"> 
-    <img alt="Java" src="https://img.shields.io/badge/JavaScript-ED8B00?style=for-the-badge&logo=JavaScript&logoColor=white">
-  </a>
+---
 
-   <a href="https://www.html.com" target="_blank">
-    <img alt="Python" src="https://img.shields.io/badge/Html5-e34f26?style=for-the-badge&logo=html5&logoColor=white">
-  </a>
+### 🛠 Skills
+<p align="center">
+  <img src="https://img.shields.io/badge/JavaScript-ED8B00?style=for-the-badge&logo=javascript&logoColor=white">
+  <img src="https://img.shields.io/badge/HTML5-e34f26?style=for-the-badge&logo=html5&logoColor=white">
+  <img src="https://img.shields.io/badge/CSS3-264de4?style=for-the-badge&logo=css3&logoColor=white">
+  <img src="https://img.shields.io/badge/Python-ffdc00?style=for-the-badge&logo=python&logoColor=blue">
+</p>
 
-   <a href="https://css3.com" target="_blank">
-    <img alt="Scikit" src="https://img.shields.io/badge/css-264de4?style=for-the-badge&logo=css3&logoColor=white">
-  </a>
+---
 
-  <a href="https://www.python.org" target="_blank">
-    <img alt="Scikit" src="https://img.shields.io/badge/python-ffdc00?style=for-the-badge&logo=python&logoColor=blue">
-  </a>
-
-<h2> Github Stats (Expand to View) <img src = "https://i.pinimg.com/originals/65/c4/f4/65c4f452571be1261e9c623f7da488ac.gif" width = 35px> </h2>
-
-<details> 
-  <summary><b>💻 GitHub Profile Stats</b></summary>
-  <br/>
-  <p align="center">
-    <a href="https://github.com/anuraghazra/github-readme-stats"><img alt="Rendra Github Stats" src="https://github-readme-stats.vercel.app/api?username=pandhu-rendra&show_icons=true&count_private=true&theme=algolia" height="192px"/></a>
-<br/>
-  &nbsp;
-	  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=pandhu-rendra&show_icons=true&locale=en&layout=compact&theme=algolia" alt="rendra" height="192px"/>
-  <br/>
-  </p>
+### 📊 GitHub Stats
+<details>
+<summary><b>💻 My GitHub Statistics</b></summary>
+<br>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=pandhu-rendra&show_icons=true&count_private=true&theme=algolia" height="192px"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=pandhu-rendra&layout=compact&theme=algolia" height="192px"/>
+</p>
 </details>
-
 
 <details>
-  <summary><b>⚡ Recent GitHub Activity</b></summary>
-  <br/>
-   <a href="https://github.com/pandhu-rendra"><img alt="Rendra Activity Graph" src="https://github-readme-activity-graph.vercel.app/graph?username=pandhu-rendra&theme=react-dark" /></a>
-  <br/>
-
+<summary><b>⚡ Recent Activity</b></summary>
+<br>
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=pandhu-rendra&theme=react-dark" />
+</p>
 </details>
 
-<br/>
+---
 
-## Popular Projects
-<a href="https://github.com/pandhu-rendra/Custom-Activity">
-  <!-- Change the `github-readme-stats.anuraghazra1.vercel.app` to `github-readme-stats.vercel.app`  -->
-  <img align="center" src="https://github-readme-stats.anuraghazra1.vercel.app/api/pin/?username=pandhu-rendra&repo=Custom-Activity&theme=onedark" />
-</a>  
+### 🚀 Popular Projects
+<p align="center">
+  <a href="https://github.com/pandhu-rendra/Custom-Activity">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=pandhu-rendra&repo=Custom-Activity&theme=onedark" />
+  </a>
+  <a href="https://github.com/pandhu-rendra/Auto-Responder">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=pandhu-rendra&repo=Auto-Responder&theme=onedark" />
+  </a>
+</p>
 
+---
 
-<a href="https://github.com/pandhu-rendra/overwrite-bot">
-  <!-- Change the `github-readme-stats.anuraghazra1.vercel.app` to `github-readme-stats.vercel.app`  -->
-  <img align="center" src="https://github-readme-stats.anuraghazra1.vercel.app/api/pin/?username=pandhu-rendra&repo=Auto-Responder&theme=onedark" />
-</a> 
-
-----------------------------------------------------------------------
-Credit: [Rendra](https://github.com/pandhu-rendra)
-
-Last Edited on: 27/8/2024
+<p align="center">✨ Credit: <a href="https://github.com/pandhu-rendra">Rendra</a> | Last Edited: 27/08/2024</p>
