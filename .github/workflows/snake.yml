@@ -2,16 +2,30 @@ name: 🐍 Generate Contribution Snake
 
 on:
   schedule:
-    - cron: "*/5 * * * *" # 00:00 WIB
-  workflow_dispatch:
+    - cron: "*/5 * * * *"   # setiap 5 menit (cron selalu UTC; interval 5 menit aman untuk WIB juga)
+  workflow_dispatch: {}
 
 permissions:
   contents: write
+
+# Hindari job dobel kalau run sebelumnya belum selesai
+concurrency:
+  group: snake
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Set timezone runner ke Asia/Jakarta (WIB)
+      - name: Set timezone (WIB)
+        uses: szenius/set-timezone@v2.0
+        with:
+          timezoneLinux: "Asia/Jakarta"
+
       - name: Generate snake SVG(s)
         uses: Platane/snk@v3
         with:
@@ -20,10 +34,15 @@ jobs:
             dist/github-snake.svg?color_snake=#b57edc&color_dots=#e0e0ff,#9d7ef0,#8473e0,#6a65d8,#5354cc
             dist/github-snake-dark.svg?palette=github-dark&color_snake=#b57edc&color_dots=#e0e0ff,#9d7ef0,#8473e0,#6a65d8,#5354cc
 
+      # Timestamp commit pakai WIB (fallback pakai TZ env juga)
+      - name: Build WIB timestamp
+        run: echo "TS=$(TZ=Asia/Jakarta date +'%Y-%m-%d %H:%M WIB')" >> "$GITHUB_ENV"
+
       - name: Publish to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
+          commit_message: "chore(snake): update ${{ env.TS }}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
