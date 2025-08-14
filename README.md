@@ -178,11 +178,11 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 
 ## 📜 Changelog
 <!--CHANGELOG_START-->
+- 2025-08-14 22:47 WIB — Update update-readme.yml (0da1cbb)
+- 2025-08-14 22:47 WIB — chore(readme): pretty Spotify banner (WIB) - 2025-08-14 22:47 WIB (edcc11d)
+- 2025-08-14 15:45 WIB — chore(readme): auto-update changelog (top 5) (82c301d)
 - 2025-08-14 22:45 WIB — Update spotify-now.yml (d52304e)
 - 2025-08-14 15:42 WIB — chore(readme): auto-update changelog (top 5) (1b5390e)
-- 2025-08-14 22:41 WIB — Update snake.yml (02b0597)
-- 2025-08-14 15:32 WIB — chore(readme): auto-update quote + tip + timestamp (0fe1581)
-- 2025-08-14 15:29 WIB — chore(readme): auto-update changelog (top 5) (b7b562e)
 <!--CHANGELOG_END-->
 <p align="right">
   <a href="https://github.com/pandhu-rendra/pandhu-rendra/commits/main">
