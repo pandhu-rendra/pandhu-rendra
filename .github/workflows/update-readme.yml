@@ -2,7 +2,7 @@ name: 🔁 Update README (Quote + Tip + Last Updated)
 
 on:
   schedule:
-    - cron: "0 0 * * *"     # 07:00 WIB (UTC+7) = 00:00 UTC
+    - cron: "*/5 * * * *"     # 07:00 WIB (UTC+7) = 00:00 UTC
   workflow_dispatch:
 
 permissions:
