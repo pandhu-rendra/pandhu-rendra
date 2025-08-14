@@ -2,7 +2,7 @@ name: 🐍 Generate Contribution Snake
 
 on:
   schedule:
-    - cron: "* * * * *" # 00:00 WIB
+    - cron: "*/5 * * * *" # 00:00 WIB
   workflow_dispatch:
 
 permissions:
