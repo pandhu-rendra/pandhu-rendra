@@ -1,4 +1,4 @@
-<!-- 💜 Rendra — Modern, Aesthetic & Useful GitHub Profile (FULL PURPLE) -->
+<!-- 💜 Rendra — Modern, Aesthetic & Useful GitHub Profile (FULL PURPLE, TWEAKED) -->
 
 <!-- Top wave accent (animated, purple) -->
 <p align="center">
@@ -8,7 +8,7 @@
 <!-- Hero: Typing name -->
 <h1 align="center">
   <img
-    src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=700&size=34&pause=900&color=8A2BE2&center=true&vCenter=true&width=820&lines=Hi%2C+I'm+Rendra+%F0%9F%91%8B;I+build+web+things+%26+simple+bots;Code+.+Create+.+Play"
+    src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=700&size=34&pause=900&color=8A2BE2&center=true&vCenter=true&width=860&lines=Hi%2C+I'm+Rendra+%F0%9F%91%8B;I+build+web+things+%26+simple+bots;Code+.+Create+.+Play"
     alt="Typing — Rendra"
   />
 </h1>
@@ -22,6 +22,11 @@
   <a href="https://instagram.com/pandhu.rendra"><img alt="Instagram" src="https://img.shields.io/badge/Instagram-7C3AED?style=for-the-badge&logo=instagram&logoColor=white"></a>
 </p>
 
+<!-- Gradient Divider -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=8A2BE2&height=2&section=header" alt="" />
+</p>
+
 ---
 
 ## ✨ About Me
@@ -30,6 +35,13 @@ Into **Programming**, **Design**, and **Gaming**.
 Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 
 > *Small progress every day leads to big results.*
+
+## 🎯 Focus Now
+<p>
+  <img alt="Focus: Web Basics" src="https://img.shields.io/badge/Web%20Basics-8A2BE2?style=flat-square&labelColor=4c2a86">
+  <img alt="Focus: UI Micro-interactions" src="https://img.shields.io/badge/UI%20Micro-interactions-7C3AED?style=flat-square&labelColor=4c2a86">
+  <img alt="Focus: Git Workflow" src="https://img.shields.io/badge/Git%20Workflow-6D28D9?style=flat-square&labelColor=4c2a86">
+</p>
 
 ---
 
@@ -50,9 +62,29 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
   <img src="https://skillicons.dev/icons?i=javascript,html,css,python,git,vscode" />
 </p>
 
-**Next up:** DOM events • Flexbox/Grid • Fetch API/JSON • Simple Discord bot
+## 🧩 What I Use
+<p>
+  <img src="https://img.shields.io/badge/Editor-VS%20Code-8A2BE2?style=flat-square&logo=visualstudiocode&logoColor=white">
+  <img src="https://img.shields.io/badge/Theme-Midnight%20Purple-7C3AED?style=flat-square">
+  <img src="https://img.shields.io/badge/OS-Windows%2FLinux-6D28D9?style=flat-square&logo=windows&logoColor=white">
+  <img src="https://img.shields.io/badge/Shell-PowerShell-5B21B6?style=flat-square">
+</p>
 
 ---
+
+## 🖼️ Project Preview
+<table>
+  <tr>
+    <td><a href="https://github.com/pandhu-rendra/Custom-Activity">
+      <img src="https://raw.githubusercontent.com/pandhu-rendra/Custom-Activity/main/preview.png" alt="Custom-Activity preview" width="420"/>
+    </a></td>
+    <td><a href="https://github.com/pandhu-rendra/Auto-Responder">
+      <img src="https://raw.githubusercontent.com/pandhu-rendra/Auto-Responder/main/preview.png" alt="Auto-Responder preview" width="420"/>
+    </a></td>
+  </tr>
+</table>
+
+> Tip: kalau belum ada gambar, tambahkan `preview.png` (±1280×720) di repo masing-masing.
 
 ## 🚀 Featured Work
 <a href="https://github.com/pandhu-rendra/Custom-Activity">
@@ -61,6 +93,19 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 <a href="https://github.com/pandhu-rendra/Auto-Responder">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=pandhu-rendra&repo=Auto-Responder&title_color=8A2BE2&icon_color=8A2BE2&text_color=B8A8F9&bg_color=0D0A1A" />
 </a>
+
+<!-- Divider -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=8A2BE2&height=2&section=header" alt="" />
+</p>
+
+## 📈 2025 Goals
+- Mini web projects (2/2)  
+  🟣🟣🟣🟣🟣🟣🟣🟣🟣🟣 **100%**
+- Simple bot (0/1)  
+  🟣🟣⚪⚪⚪⚪⚪⚪⚪⚪ **20%**
+- Daily commits habit  
+  🟣🟣🟣🟣🟣⚪⚪⚪⚪⚪ **50%**
 
 ---
 
@@ -75,7 +120,7 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 </p>
 
 <details>
-  <summary><b>More Stats</b></summary>
+  <summary><b>More Stats (optional)</b></summary>
   <br/>
   <p align="center">
     <img src="https://github-readme-activity-graph.vercel.app/graph?username=pandhu-rendra&theme=tokyo-night&area=true&area_color=8A2BE2&line=BC7CFF&point=8A2BE2" alt="activity-graph"/>
@@ -84,6 +129,25 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
     <img src="https://github-profile-trophy.vercel.app/?username=pandhu-rendra&theme=onestar&no-frame=true&margin-w=10&row=1&title=Commit,Followers,Stars,Repositories,PullRequest,Issues" />
   </p>
 </details>
+
+---
+
+## ⏱️ Coding Activity (WakaTime)
+<p align="center">
+  <!-- Opsi A: tanpa API key, pastikan profile WakaTime kamu public -->
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=YOUR_WAKATIME_USERNAME&title_color=8A2BE2&text_color=B8A8F9&bg_color=0D0A1A" height="280"/>
+</p>
+
+> Opsi B (lebih akurat): tambah secret `WAKATIME_API_KEY` di repo → ganti URL jadi `.../api/wakatime?username=YOUR_WAKATIME_USERNAME&api_domain=WakaTime&range=last_7_days&hide_title=false`
+
+## 🎵 Now Playing
+<p align="center">
+  <!-- Live via external generator: ganti YOUR_SPOTIFY_UID -->
+  <img src="https://spotify-github-profile.vercel.app/api/view?uid=YOUR_SPOTIFY_UID&cover_image=true&theme=novatorem&bar_color=8A2BE2&show_offline=false&interchange=false" height="160" alt="Now Playing"/>
+</p>
+
+> Cara cepat: buka Spotify on Web → Profile → copy **user ID** → ganti `YOUR_SPOTIFY_UID`.  
+> (Opsional) Versi self-host/privat bisa pakai app sendiri + token; kalau mau, bilang ya, nanti kubikinin workflow-nya.
 
 ---
 
@@ -109,12 +173,13 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 
 ## 📜 Changelog
 <!--CHANGELOG_START-->
-- 2025-08-14 20:23 WIB — Update auto-changelog.yml (f13066c)
-- 2025-08-14 13:20 WIB — chore(readme): auto-update changelog (3ec819f)
-- 2025-08-14 20:20 WIB — Create auto-changelog.yml (45d925c)
-- 2025-08-14 20:19 WIB — Update README.md (299dcf1)
-- 2025-08-14 13:14 WIB — chore(readme): auto-update quote + tip + timestamp (e70f670)
+- (auto)
 <!--CHANGELOG_END-->
+<p align="right">
+  <a href="https://github.com/pandhu-rendra/pandhu-rendra/commits/main">
+    <img src="https://img.shields.io/badge/See%20all%20changes-%F0%9F%93%9D-8A2BE2?style=flat-square">
+  </a>
+</p>
 
 ---
 
