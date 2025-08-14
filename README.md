@@ -84,8 +84,6 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
   </tr>
 </table>
 
-> Tip: kalau belum ada gambar, tambahkan `preview.png` (±1280×720) di repo masing-masing.
-
 ## 🚀 Featured Work
 <a href="https://github.com/pandhu-rendra/Custom-Activity">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=pandhu-rendra&repo=Custom-Activity&title_color=8A2BE2&icon_color=8A2BE2&text_color=B8A8F9&bg_color=0D0A1A" />
@@ -98,14 +96,6 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=rect&color=8A2BE2&height=2&section=header" alt="" />
 </p>
-
-## 📈 2025 Goals
-- Mini web projects (2/2)  
-  🟣🟣🟣🟣🟣🟣🟣🟣🟣🟣 **100%**
-- Simple bot (0/1)  
-  🟣🟣⚪⚪⚪⚪⚪⚪⚪⚪ **20%**
-- Daily commits habit  
-  🟣🟣🟣🟣🟣⚪⚪⚪⚪⚪ **50%**
 
 ---
 
@@ -135,19 +125,14 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 ## ⏱️ Coding Activity (WakaTime)
 <p align="center">
   <!-- Opsi A: tanpa API key, pastikan profile WakaTime kamu public -->
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=YOUR_WAKATIME_USERNAME&title_color=8A2BE2&text_color=B8A8F9&bg_color=0D0A1A" height="280"/>
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=rendraexe&title_color=8A2BE2&text_color=B8A8F9&bg_color=0D0A1A" height="280"/>
 </p>
-
-> Opsi B (lebih akurat): tambah secret `WAKATIME_API_KEY` di repo → ganti URL jadi `.../api/wakatime?username=YOUR_WAKATIME_USERNAME&api_domain=WakaTime&range=last_7_days&hide_title=false`
 
 ## 🎵 Now Playing
 <p align="center">
   <!-- Live via external generator: ganti YOUR_SPOTIFY_UID -->
-  <img src="https://spotify-github-profile.vercel.app/api/view?uid=YOUR_SPOTIFY_UID&cover_image=true&theme=novatorem&bar_color=8A2BE2&show_offline=false&interchange=false" height="160" alt="Now Playing"/>
+  <img src="https://spotify-github-profile.vercel.app/api/view?uid=31tip3g2ck3b224bhtd2g5l5pfyi&cover_image=true&theme=novatorem&bar_color=8A2BE2&show_offline=false&interchange=false" height="160" alt="Now Playing"/>
 </p>
-
-> Cara cepat: buka Spotify on Web → Profile → copy **user ID** → ganti `YOUR_SPOTIFY_UID`.  
-> (Opsional) Versi self-host/privat bisa pakai app sendiri + token; kalau mau, bilang ya, nanti kubikinin workflow-nya.
 
 ---
 
