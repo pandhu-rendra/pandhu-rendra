@@ -48,7 +48,7 @@ jobs:
           fi
           echo "SRC=$SRC" >> "$GITHUB_ENV"
 
-            - name: Build Spotify-like banner (icons + progress)
+      - name: Build Spotify-like banner (icons + progress)
         shell: bash
         run: |
           set -euo pipefail
