@@ -130,12 +130,22 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 
 ## 🎵 Now Playing
 <!--SPOTIFY_START-->
-<p align="center">
-  <a href="https://open.spotify.com/track/6XKEElbr3cWmnUw6a5HRBV"><img src="https://i.scdn.co/image/ab67616d00001e02a053b3768be58a7117cc322b" height="96" style="border-radius:12px"/></a><br/>
-  <b><a href="https://open.spotify.com/track/6XKEElbr3cWmnUw6a5HRBV">Mati-Matian</a></b><br/>
-  Mahalini<br/>
-  <sub>Now Playing</sub>
-</p>
+<div align="center">
+  <div style="display:inline-block; text-align:left; background:#120c1e; border:1px solid #281a4a; border-radius:16px; padding:14px 16px; max-width:520px; box-shadow:0 12px 30px rgba(138,43,226,.25);">
+    <div style="display:flex; align-items:center; gap:14px;">
+      <a href="https://open.spotify.com/track/654ZF6YNWjQS2NhwR3QnX7"><img src="https://i.scdn.co/image/ab67616d00001e02bf96a2c302f85d2be7c98006" alt="cover" height="88" style="border-radius:12px; box-shadow:0 6px 16px rgba(138,43,226,.35)"/></a>
+      <div style="line-height:1.35;">
+        <div style="font-weight:700;"><a href="https://open.spotify.com/track/654ZF6YNWjQS2NhwR3QnX7" style="color:#b58cff; text-decoration:none;">Komang</a></div>
+        <div style="color:#cbb7ff; opacity:.85;">Raim Laode</div>
+        <span style="display:inline-block; margin-top:6px; padding:2px 8px; border-radius:9999px; background:#8A2BE2; color:#fff; font-size:12px;">Now Playing</span>
+      </div>
+    </div>
+    <div style="margin-top:12px; width:100%; height:6px; background:#2a2140; border-radius:999px; overflow:hidden;">
+      <div style="height:6px; width:31%; background:linear-gradient(90deg,#8A2BE2,#BC7CFF);"></div>
+    </div>
+    <div style="margin-top:6px; font-size:12px; color:#b9a5ff; opacity:.8;">1:09 / 3:42</div>
+  </div>
+</div>
 <!--SPOTIFY_END-->
 
 ---
