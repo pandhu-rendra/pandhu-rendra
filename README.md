@@ -162,11 +162,11 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 
 ## 📜 Changelog
 <!--CHANGELOG_START-->
+- 2025-08-14 21:58 WIB — Update spotify-now.yml (dfd6ad1)
+- 2025-08-14 14:52 WIB — chore(readme): update Spotify Now Playing (1f8579f)
+- 2025-08-14 14:47 WIB — chore(readme): update Spotify Now Playing (1b5347b)
+- 2025-08-14 14:16 WIB — chore(readme): auto-update changelog (top 5) (94425f2)
 - 2025-08-14 21:16 WIB — Update spotify-now.yml (8022848)
-- 2025-08-14 14:07 WIB — chore(readme): auto-update changelog (top 5) (b08de6d)
-- 2025-08-14 21:07 WIB — Create spotify-now.yml (dabd444)
-- 2025-08-14 14:06 WIB — chore(readme): auto-update changelog (top 5) (e14d860)
-- 2025-08-14 21:05 WIB — Update README.md (b2d18cd)
 <!--CHANGELOG_END-->
 <p align="right">
   <a href="https://github.com/pandhu-rendra/pandhu-rendra/commits/main">
