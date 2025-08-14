@@ -130,7 +130,7 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 
 ## 🎵 Now Playing
 <!--SPOTIFY_START-->
-<p align="center">Loading…</p>
+<p align="center">Tidak ada data Spotify.</p>
 <!--SPOTIFY_END-->
 
 ---
