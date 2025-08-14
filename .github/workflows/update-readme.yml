@@ -1,12 +1,17 @@
-name: 🔁 Update README (Quote + Tip + Last Updated)
+name: "🔁 Update README (Quote + Tip + Last Updated)"
 
 on:
   schedule:
-    - cron: "*/5 * * * *"     # 07:00 WIB (UTC+7) = 00:00 UTC
-  workflow_dispatch:
+    - cron: "*/5 * * * *"   # tiap 5 menit
+  workflow_dispatch: {}
 
 permissions:
   contents: write
+
+# Hindari tabrakan job
+concurrency:
+  group: update-readme
+  cancel-in-progress: true
 
 jobs:
   update:
@@ -14,6 +19,12 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+
+      # Set timezone runner ke Asia/Jakarta
+      - name: Set timezone (WIB)
+        uses: szenius/set-timezone@v2.0
+        with:
+          timezoneLinux: "Asia/Jakarta"
 
       - name: Fetch random quote (with fallback)
         id: quote
@@ -54,7 +65,7 @@ jobs:
       - name: Update README (Quote + Tip + Last Updated)
         shell: bash
         run: |
-          TS="$(date -u +"%d/%m/%Y %H:%M UTC")"
+          TS="$(date +'%d/%m/%Y %H:%M WIB')"
 
           # Update Daily Quote block
           awk -v q="$QUOTE" -v a="$AUTHOR" '
@@ -83,7 +94,7 @@ jobs:
             git config user.name  "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add README.md
-            git commit -m "chore(readme): auto-update quote + tip + timestamp"
+            git commit -m "chore(readme): auto-update quote + tip + timestamp (WIB)"
             git push
           else
             echo "No changes."
