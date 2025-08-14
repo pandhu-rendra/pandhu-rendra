@@ -2,7 +2,7 @@ name: "🎵 Spotify Now Playing (README)"
 
 on:
   schedule:
-    - cron: "*/15 * * * *"  # update tiap 15 menit
+    - cron: "*/3 * * * *"  # update tiap 15 menit
   workflow_dispatch: {}
 
 permissions:
@@ -47,21 +47,38 @@ jobs:
           fi
           echo "SRC=$SRC" >> "$GITHUB_ENV"
 
-      - name: Build HTML snippet
+      - name: Build fancy HTML card
         shell: bash
         run: |
           set -euo pipefail
+
+          # Extract fields (support "current" and "recent" payloads)
           NAME="$(jq -r '.item.name // .items[0].track.name // empty' src.json)"
           URL="$(jq -r '.item.external_urls.spotify // .items[0].track.external_urls.spotify // empty' src.json)"
           ARTISTS="$(jq -r '[.item.artists[]?.name] // [.items[0].track.artists[]?.name] | join(", ")' src.json)"
           IMG="$(jq -r '.item.album.images[1].url // .item.album.images[0].url // .items[0].track.album.images[1].url // .items[0].track.album.images[0].url // empty' src.json)"
           IS_PLAYING="$(jq -r '.is_playing // empty' src.json)"
+          PROG_MS="$(jq -r '.progress_ms // 0' src.json)"
+          DUR_MS="$(jq -r '.item.duration_ms // .items[0].track.duration_ms // 0' src.json)"
 
+          # Helpers
           esc () { printf '%s' "$1" | sed 's/&/\&amp;/g; s/</\&lt;/g; s/>/\&gt;/g'; }
+          fmt () { ms=${1:-0}; s=$((ms/1000)); printf "%d:%02d" $((s/60)) $((s%60)); }
+
           NAME_E="$(esc "$NAME")"
           URL_E="$(esc "$URL")"
           ARTISTS_E="$(esc "$ARTISTS")"
           IMG_E="$(esc "$IMG")"
+          CURR="$(fmt "$PROG_MS")"
+          TOT="$(fmt "$DUR_MS")"
+
+          # Progress percent (0..100)
+          if [ "${DUR_MS:-0}" -gt 0 ]; then
+            PCT=$(( PROG_MS * 100 / DUR_MS ))
+            [ $PCT -gt 100 ] && PCT=100
+          else
+            PCT=0
+          fi
 
           if [ -z "$NAME_E" ] || [ -z "$URL_E" ]; then
             printf '<p align="center">Tidak ada data Spotify.</p>\n' > spotify_snippet.html
@@ -72,13 +89,24 @@ jobs:
           [ "$IS_PLAYING" = "true" ] && STATUS="Now Playing"
           [ "${SRC:-recent}" = "current" ] && STATUS="Now Playing"
 
+          # Card HTML (inline styles agar tampil rapi di README)
           {
-            printf '<p align="center">\n'
-            printf '  <a href="%s"><img src="%s" height="96" style="border-radius:12px"/></a><br/>\n' "$URL_E" "$IMG_E"
-            printf '  <b><a href="%s">%s</a></b><br/>\n' "$URL_E" "$NAME_E"
-            printf '  %s<br/>\n' "$ARTISTS_E"
-            printf '  <sub>%s</sub>\n' "$STATUS"
-            printf '</p>\n'
+            printf '<div align="center">\n'
+            printf '  <div style="display:inline-block; text-align:left; background:#120c1e; border:1px solid #281a4a; border-radius:16px; padding:14px 16px; max-width:520px; box-shadow:0 12px 30px rgba(138,43,226,.25);">\n'
+            printf '    <div style="display:flex; align-items:center; gap:14px;">\n'
+            printf '      <a href="%s"><img src="%s" alt="cover" height="88" style="border-radius:12px; box-shadow:0 6px 16px rgba(138,43,226,.35)"/></a>\n' "$URL_E" "$IMG_E"
+            printf '      <div style="line-height:1.35;">\n'
+            printf '        <div style="font-weight:700;"><a href="%s" style="color:#b58cff; text-decoration:none;">%s</a></div>\n' "$URL_E" "$NAME_E"
+            printf '        <div style="color:#cbb7ff; opacity:.85;">%s</div>\n' "$ARTISTS_E"
+            printf '        <span style="display:inline-block; margin-top:6px; padding:2px 8px; border-radius:9999px; background:#8A2BE2; color:#fff; font-size:12px;">%s</span>\n' "$STATUS"
+            printf '      </div>\n'
+            printf '    </div>\n'
+            printf '    <div style="margin-top:12px; width:100%%; height:6px; background:#2a2140; border-radius:999px; overflow:hidden;">\n'
+            printf '      <div style="height:6px; width:%s%%; background:linear-gradient(90deg,#8A2BE2,#BC7CFF);"></div>\n' "$PCT"
+            printf '    </div>\n'
+            printf '    <div style="margin-top:6px; font-size:12px; color:#b9a5ff; opacity:.8;">%s / %s</div>\n' "$CURR" "$TOT"
+            printf '  </div>\n'
+            printf '</div>\n'
           } > spotify_snippet.html
 
       - name: Inject snippet into README
@@ -100,7 +128,7 @@ jobs:
             git config user.name  "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add README.md
-            git commit -m "chore(readme): update Spotify Now Playing"
+            git commit -m "chore(readme): pretty Spotify card with progress"
             git push
           else
             echo "No changes."
