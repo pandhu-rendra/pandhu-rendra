@@ -2,7 +2,7 @@ name: "🎵 Spotify Now Playing (README)"
 
 on:
   schedule:
-    - cron: "*/3 * * * *"   # update tiap 3 menit
+    - cron: "* * * * *"   # update tiap 3 menit
   workflow_dispatch: {}
 
 permissions:
