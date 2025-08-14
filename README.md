@@ -1,4 +1,4 @@
-<!-- 💜 Full Purple Modern Profile -->
+<!-- 💜 Rendra — Modern, Aesthetic & Useful GitHub Profile -->
 
 <!-- Top wave accent (animated, purple) -->
 <p align="center">
@@ -8,14 +8,14 @@
 <!-- Hero: Typing name -->
 <h1 align="center">
   <img
-    src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=700&size=34&pause=900&color=8A2BE2&center=true&vCenter=true&width=760&lines=Hi%2C+I'm+Rendra+%F0%9F%91%8B;I+code+in+JS%2C+HTML%2C+CSS%2C+Python;Code+.+Create+.+Play"
-    alt="Typing Rendra"
+    src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=700&size=34&pause=900&color=8A2BE2&center=true&vCenter=true&width=760&lines=Hi%2C+I'm+Rendra+%F0%9F%91%8B;I+build+web+things+%26+simple+bots;Code+.+Create+.+Play"
+    alt="Typing — Rendra"
   />
 </h1>
 
 <p align="center"><em>Student • Beginner Programmer • Curious Human</em></p>
 
-<!-- Quick links -->
+<!-- Quick social -->
 <p align="center">
   <a href="https://discord.com/users/941844949824069692"><img alt="Discord" src="https://img.shields.io/badge/Discord-8A2BE2?style=for-the-badge&logo=discord&logoColor=white"></a>
   <a href="https://www.tiktok.com/@renx.freya"><img alt="TikTok" src="https://img.shields.io/badge/TikTok-6D28D9?style=for-the-badge&logo=tiktok&logoColor=white"></a>
@@ -25,36 +25,41 @@
 ---
 
 ## ✨ About Me
-Hi, I'm **Rendra** — a student at **SMP Muhammadiyah 5 Yogyakarta**.  
+Hi, I'm **Rendra** — student at **SMP Muhammadiyah 5 Yogyakarta**.  
 Into **Programming**, **Design**, and **Gaming**.  
-Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
+Learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 
 > *Small progress every day leads to big results.*
+
+### At a Glance
+- 🎯 2025: **2 mini web projects** + **1 simple bot**
+- 🧩 Focus: **Clean code**, **UI micro-interactions**, **Git basics (branch/PR)**
+- 🤝 Open to: **collab on beginner-friendly web apps**
 
 ---
 
 ## ⚡ Daily Quote
 <!--QUOTE_START-->
-> I begin with an idea and then it becomes something else. — **Pablo Picasso**
+> Loading today's quote...
 <!--QUOTE_END-->
 
 ## 💡 Dev Tip of the Day
 <!--TIP_START-->
-> Practice keyboard shortcuts in your editor to move faster every day.
+> Loading today's tip...
 <!--TIP_END-->
 
 ---
 
-## 🧰 Tech Stack
+## 🧰 Toolbox
 <p>
-  <img src="https://skillicons.dev/icons?i=javascript,html,css,python" />
+  <img src="https://skillicons.dev/icons?i=javascript,html,css,python,git,vscode" />
 </p>
 
 **Next up:** DOM events • Flexbox/Grid • Fetch API/JSON • Simple Discord bot
 
 ---
 
-## 🚀 Featured
+## 🚀 Featured Work
 <a href="https://github.com/pandhu-rendra/Custom-Activity">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=pandhu-rendra&repo=Custom-Activity&title_color=8A2BE2&icon_color=8A2BE2&text_color=B8A8F9&bg_color=0D0A1A" />
 </a>
@@ -75,7 +80,7 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 </p>
 
 <details>
-  <summary><b>More Stats (open)</b></summary>
+  <summary><b>More Stats & History</b> (click)</summary>
   <br/>
   <p align="center">
     <img src="https://github-readme-activity-graph.vercel.app/graph?username=pandhu-rendra&theme=tokyo-night&area=true&area_color=8A2BE2&line=BC7CFF&point=8A2BE2" alt="activity-graph"/>
@@ -83,15 +88,10 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
   <p align="center">
     <img src="https://github-profile-trophy.vercel.app/?username=pandhu-rendra&theme=onestar&no-frame=true&margin-w=10&row=1&title=Commit,Followers,Stars,Repositories,PullRequest,Issues" />
   </p>
+  <p align="center">
+    <img src="https://api.star-history.com/svg?repos=pandhu-rendra/Custom-Activity,pandhu-rendra/Auto-Responder&type=Date" alt="Star History Chart" />
+  </p>
 </details>
-
----
-
-## ⭐ Star History
-<!-- growth chart for selected repos -->
-<p align="center">
-  <img src="https://api.star-history.com/svg?repos=pandhu-rendra/Custom-Activity,pandhu-rendra/Auto-Responder&type=Date" alt="Star History Chart" />
-</p>
 
 ---
 
@@ -121,7 +121,7 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 
 <!-- Last-updated (auto from workflow) -->
 <p align="right">
-  <sub><span id="last-updated"><!--LAST_UPDATE-->Last updated: 14/08/2025 12:27 UTC<!--/LAST_UPDATE--></span></sub>
+  <sub><span id="last-updated"><!--LAST_UPDATE-->Last updated: loading...<!--/LAST_UPDATE--></span></sub>
 </p>
 
 <!-- Bottom wave accent (animated, purple) -->
