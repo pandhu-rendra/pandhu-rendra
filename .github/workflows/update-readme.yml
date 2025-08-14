@@ -1,4 +1,4 @@
-name: 🔁 Update README (Quote + Last Updated)
+name: 🔁 Update README (Quote + Tip + Last Updated)
 
 on:
   schedule:
@@ -15,20 +15,48 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Fetch random quote
+      - name: Fetch random quote (with fallback)
         id: quote
+        shell: bash
         run: |
-          RESP=$(curl -s https://zenquotes.io/api/random)
-          Q=$(echo "$RESP" | jq -r '.[0].q' | sed 's/[&]/\\&/g')
-          A=$(echo "$RESP" | jq -r '.[0].a' | sed 's/[&]/\\&/g')
-          echo "QUOTE=$Q" >> $GITHUB_ENV
-          echo "AUTHOR=$A" >> $GITHUB_ENV
+          set -e
+          RESP="$(curl -s --max-time 10 https://zenquotes.io/api/random || true)"
+          if echo "$RESP" | jq -e '.[0].q and .[0].a' >/dev/null 2>&1; then
+            Q="$(echo "$RESP" | jq -r '.[0].q')"
+            A="$(echo "$RESP" | jq -r '.[0].a')"
+          else
+            Q="Simplicity is the soul of efficiency."
+            A="Austin Freeman"
+          fi
+          Q_ESC="${Q//&/\\&}"
+          A_ESC="${A//&/\\&}"
+          echo "QUOTE=$Q_ESC" >> $GITHUB_ENV
+          echo "AUTHOR=$A_ESC" >> $GITHUB_ENV
 
-      - name: Update README (Quote + Last Updated)
+      - name: Pick Dev Tip (local rotation)
+        id: tip
+        shell: bash
+        run: |
+          mapfile -t TIPS <<'EOF'
+Use meaningful commit messages; they are future-you’s documentation.
+Practice keyboard shortcuts in your editor to move faster every day.
+Break problems into tiny steps; ship the smallest useful version first.
+Read error messages slowly; they often tell you the exact fix.
+Sketch UI on paper before you code—it saves time.
+Use console.log() intentionally; remove or group them after debugging.
+Learn basics of Flexbox and Grid—80% of layout pain disappears.
+EOF
+          I=$((RANDOM % ${#TIPS[@]}))
+          TIP="${TIPS[$I]}"
+          TIP_ESC="${TIP//&/\\&}"
+          echo "TIP=$TIP_ESC" >> $GITHUB_ENV
+
+      - name: Update README (Quote + Tip + Last Updated)
+        shell: bash
         run: |
           TS="$(date -u +"%d/%m/%Y %H:%M UTC")"
 
-          # Update Daily Quote
+          # Update Daily Quote block
           awk -v q="$QUOTE" -v a="$AUTHOR" '
             BEGIN{inblk=0}
             /<!--QUOTE_START-->/ {print; print "> " q " — **" a "**"; inblk=1; next}
@@ -36,7 +64,15 @@ jobs:
             !inblk {print}
           ' README.md > README.tmp && mv README.tmp README.md
 
-          # Update Last Updated (pakai { } sebagai delimiter)
+          # Update Dev Tip block
+          awk -v t="$TIP" '
+            BEGIN{inblk=0}
+            /<!--TIP_START-->/ {print; print "> " t; inblk=1; next}
+            /<!--TIP_END-->/   {inblk=0}
+            !inblk {print}
+          ' README.md > README.tmp && mv README.tmp README.md
+
+          # Update Last Updated marker (safe delimiter)
           perl -0777 -pe "s{<!--LAST_UPDATE-->.*?<!--/LAST_UPDATE-->}{<!--LAST_UPDATE-->Last updated: ${TS}<!--/LAST_UPDATE-->}s" -i README.md
 
       - name: Commit & push
@@ -47,7 +83,7 @@ jobs:
             git config user.name  "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add README.md
-            git commit -m "chore(readme): auto-update quote & timestamp"
+            git commit -m "chore(readme): auto-update quote + tip + timestamp"
             git push
           else
             echo "No changes."
