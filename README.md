@@ -31,7 +31,7 @@
 
 ## ⚡ Daily Quote
 <!--QUOTE_START-->
-> Loading today's quote...
+> The golden opportunity you are seeking is in yourself. It is not in your environment; it is not in luck or chance, or the help of others; it is in yourself alone.  — **Orison Swett Marden**
 <!--QUOTE_END-->
 
 ---
@@ -103,5 +103,5 @@
 - Discord: **renx.freya** (ID: 941844949824069692)
 
 <p align="center">
-  <sub>© 2025 Rendra • <span id="last-updated"><!--LAST_UPDATE-->Last updated: loading...<!--/LAST_UPDATE--></span></sub>
+  <sub>© 2025 Rendra • <span id="last-updated"><!--LAST_UPDATE-->Last updated: 14/08/2025 12:11 UTC<!--/LAST_UPDATE--></span></sub>
 </p>
