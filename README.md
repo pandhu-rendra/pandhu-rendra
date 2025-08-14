@@ -8,14 +8,14 @@
 <!-- Hero: Typing name -->
 <h1 align="center">
   <img
-    src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=700&size=34&pause=900&color=8A2BE2&center=true&vCenter=true&width=700&lines=Hi%2C+I'm+Rendra+%F0%9F%91%8B;I+code+in+JS%2C+HTML%2C+CSS%2C+Python;Code+.+Create+.+Play"
+    src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=700&size=34&pause=900&color=8A2BE2&center=true&vCenter=true&width=760&lines=Hi%2C+I'm+Rendra+%F0%9F%91%8B;I+code+in+JS%2C+HTML%2C+CSS%2C+Python;Code+.+Create+.+Play"
     alt="Typing Rendra"
   />
 </h1>
 
 <p align="center"><em>Student • Beginner Programmer • Curious Human</em></p>
 
-<!-- Quick links (purple style) -->
+<!-- Quick links -->
 <p align="center">
   <a href="https://discord.com/users/941844949824069692"><img alt="Discord" src="https://img.shields.io/badge/Discord-8A2BE2?style=for-the-badge&logo=discord&logoColor=white"></a>
   <a href="https://www.tiktok.com/@renx.freya"><img alt="TikTok" src="https://img.shields.io/badge/TikTok-6D28D9?style=for-the-badge&logo=tiktok&logoColor=white"></a>
@@ -38,6 +38,11 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 > Loading today's quote...
 <!--QUOTE_END-->
 
+## 💡 Dev Tip of the Day
+<!--TIP_START-->
+> Loading today's tip...
+<!--TIP_END-->
+
 ---
 
 ## 🧰 Tech Stack
@@ -59,7 +64,7 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 
 ---
 
-## 📊 Stats
+## 📊 Quick Stats
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=pandhu-rendra&show_icons=true&hide_title=true&count_private=true&title_color=8A2BE2&icon_color=8A2BE2&text_color=B8A8F9&bg_color=0D0A1A" height="160" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=pandhu-rendra&layout=compact&title_color=8A2BE2&text_color=B8A8F9&bg_color=0D0A1A" height="160" />
@@ -67,6 +72,34 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com?user=pandhu-rendra&theme=midnight-purple&ring=8A2BE2&fire=BC7CFF&currStreakLabel=BC7CFF" height="160" />
+</p>
+
+<details>
+  <summary><b>More Stats (open)</b></summary>
+  <br/>
+  <p align="center">
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=pandhu-rendra&theme=tokyo-night&area=true&area_color=8A2BE2&line=BC7CFF&point=8A2BE2" alt="activity-graph"/>
+  </p>
+  <p align="center">
+    <img src="https://github-profile-trophy.vercel.app/?username=pandhu-rendra&theme=onestar&no-frame=true&margin-w=10&row=1&title=Commit,Followers,Stars,Repositories,PullRequest,Issues" />
+  </p>
+</details>
+
+---
+
+## ⭐ Star History
+<!-- growth chart for selected repos -->
+<p align="center">
+  <img src="https://api.star-history.com/svg?repos=pandhu-rendra/Custom-Activity,pandhu-rendra/Auto-Responder&type=Date" alt="Star History Chart" />
+</p>
+
+---
+
+## 🪄 Highlights
+<p>
+  <img alt="Open to collaborate" src="https://img.shields.io/badge/Open%20to%20collaborate-8A2BE2?style=flat-square">
+  <img alt="Ask me about" src="https://img.shields.io/badge/Ask%20me%20about-JS%2C%20HTML%2C%20CSS%2C%20Python-7C3AED?style=flat-square">
+  <img alt="Learning" src="https://img.shields.io/badge/Learning-UI%20Animations%20%26%20Git-6D28D9?style=flat-square">
 </p>
 
 ---
