@@ -27,9 +27,10 @@ jobs:
           echo "QUOTE=$Q" >> $GITHUB_ENV
           echo "AUTHOR=$A" >> $GITHUB_ENV
 
-      - name: Update README (Quote + Last Updated)
+            - name: Update README (Quote + Last Updated)
         run: |
           TS="$(date -u +"%d/%m/%Y %H:%M UTC")"
+
           # Replace Daily Quote block between markers
           awk -v q="$QUOTE" -v a="$AUTHOR" '
             BEGIN{inblk=0}
@@ -38,8 +39,8 @@ jobs:
             !inblk {print}
           ' README.md > README.tmp && mv README.tmp README.md
 
-          # Replace Last Updated marker
-          perl -0777 -pe "s/<!--LAST_UPDATE-->.*?<!--\\/LAST_UPDATE-->/<!--LAST_UPDATE-->Last updated: ${TS}<!--\\/LAST_UPDATE-->/s" -i README.md
+          # Replace Last Updated marker (gunakan delimiter { } agar aman dari /)
+          perl -0777 -pe "s{<!--LAST_UPDATE-->.*?<!--/LAST_UPDATE-->}{<!--LAST_UPDATE-->Last updated: ${TS}<!--/LAST_UPDATE-->}s" -i README.md
 
       - name: Commit & push
         env:
