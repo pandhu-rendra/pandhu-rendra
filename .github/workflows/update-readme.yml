@@ -1,0 +1,56 @@
+name: 🔁 Update README (Quote + Last Updated)
+
+on:
+  schedule:
+    - cron: "0 0 * * *"     # 07:00 WIB (UTC+7) = 00:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Fetch random quote
+        id: quote
+        run: |
+          # Ambil 1 quote acak (format [{"q":"quote","a":"author"}])
+          RESP=$(curl -s https://zenquotes.io/api/random)
+          Q=$(echo "$RESP" | jq -r '.[0].q' | sed 's/[&]/\\&/g')
+          A=$(echo "$RESP" | jq -r '.[0].a' | sed 's/[&]/\\&/g')
+          echo "text=> $Q"
+          echo "author=> $A"
+          echo "QUOTE=$Q" >> $GITHUB_ENV
+          echo "AUTHOR=$A" >> $GITHUB_ENV
+
+      - name: Update README (Quote + Last Updated)
+        run: |
+          TS="$(date -u +"%d/%m/%Y %H:%M UTC")"
+          # Replace Daily Quote block between markers
+          awk -v q="$QUOTE" -v a="$AUTHOR" '
+            BEGIN{inblk=0}
+            /<!--QUOTE_START-->/ {print; print "> " q " — **" a "**"; inblk=1; next}
+            /<!--QUOTE_END-->/   {inblk=0}
+            !inblk {print}
+          ' README.md > README.tmp && mv README.tmp README.md
+
+          # Replace Last Updated marker
+          perl -0777 -pe "s/<!--LAST_UPDATE-->.*?<!--\\/LAST_UPDATE-->/<!--LAST_UPDATE-->Last updated: ${TS}<!--\\/LAST_UPDATE-->/s" -i README.md
+
+      - name: Commit & push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [[ -n $(git status --porcelain) ]]; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add README.md
+            git commit -m "chore(readme): auto-update quote & timestamp"
+            git push
+          else
+            echo "No changes."
+          fi
