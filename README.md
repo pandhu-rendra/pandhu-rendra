@@ -131,19 +131,20 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 ## 🎵 Now Playing
 <!--SPOTIFY_START-->
 <div align="center">
-  <div style="display:inline-block; text-align:left; background:#120c1e; border:1px solid #281a4a; border-radius:16px; padding:14px 16px; max-width:520px; box-shadow:0 12px 30px rgba(138,43,226,.25);">
-    <div style="display:flex; align-items:center; gap:14px;">
-      <a href="https://open.spotify.com/track/654ZF6YNWjQS2NhwR3QnX7"><img src="https://i.scdn.co/image/ab67616d00001e02bf96a2c302f85d2be7c98006" alt="cover" height="88" style="border-radius:12px; box-shadow:0 6px 16px rgba(138,43,226,.35)"/></a>
+  <div style="display:inline-block; width:100%; max-width:720px; background:linear-gradient(135deg,#0d0a1a,#1a1030); border:1px solid #2a1f47; border-radius:20px; padding:18px; box-shadow:0 16px 36px rgba(138,43,226,.28);">
+    <div style="height:4px; background:linear-gradient(90deg,#8A2BE2,#BC7CFF); border-radius:999px; margin:-6px -6px 14px -6px;"></div>
+    <div style="display:flex; align-items:center; gap:18px;">
+      <a href="https://open.spotify.com/track/1x9jnpPOAMSrr7DuIG5jMl"><img src="https://i.scdn.co/image/ab67616d00001e02680f1025f6619c42a3c23864" alt="cover" height="96" style="border-radius:14px; box-shadow:0 8px 20px rgba(138,43,226,.35)"/></a>
       <div style="line-height:1.35;">
-        <div style="font-weight:700;"><a href="https://open.spotify.com/track/654ZF6YNWjQS2NhwR3QnX7" style="color:#b58cff; text-decoration:none;">Komang</a></div>
-        <div style="color:#cbb7ff; opacity:.85;">Raim Laode</div>
-        <span style="display:inline-block; margin-top:6px; padding:2px 8px; border-radius:9999px; background:#8A2BE2; color:#fff; font-size:12px;">Now Playing</span>
+        <div style="font-weight:800; font-size:18px;"><a href="https://open.spotify.com/track/1x9jnpPOAMSrr7DuIG5jMl" style="color:#cdb8ff; text-decoration:none;">Kita usahakan rumah itu</a></div>
+        <div style="color:#b9a5ff; opacity:.9; margin-top:2px;">Sal Priadi</div>
+        <span style="display:inline-block; margin-top:8px; padding:3px 10px; border-radius:9999px; background:#8A2BE2; color:#fff; font-size:12px; letter-spacing:.2px;">Now Playing</span>
       </div>
     </div>
-    <div style="margin-top:12px; width:100%; height:6px; background:#2a2140; border-radius:999px; overflow:hidden;">
-      <div style="height:6px; width:31%; background:linear-gradient(90deg,#8A2BE2,#BC7CFF);"></div>
+    <div style="margin-top:14px; width:100%; height:8px; background:#2a2140; border-radius:999px; overflow:hidden;">
+      <div style="height:8px; width:19%; background:linear-gradient(90deg,#8A2BE2,#BC7CFF);"></div>
     </div>
-    <div style="margin-top:6px; font-size:12px; color:#b9a5ff; opacity:.8;">1:09 / 3:42</div>
+    <div style="display:flex; justify-content:space-between; margin-top:6px; font-size:12px; color:#b9a5ff; opacity:.82;"><span>0:41</span><span>3:31</span></div>
   </div>
 </div>
 <!--SPOTIFY_END-->
