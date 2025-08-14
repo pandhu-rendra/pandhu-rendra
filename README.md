@@ -1,10 +1,5 @@
-<!--
-  Modern, clean, and fully remade GitHub profile README
-  Owner  : pandhu-rendra
-  Edited : 14/08/2025
--->
+<!-- Modern, clean, and fully remade GitHub profile README -->
 
-<!-- ===== HERO ===== -->
 <h1 align="center">Rendra — Code, Create, Play 🎮</h1>
 <p align="center">
   <em>Student • Beginner Programmer • Curious Human</em>
@@ -23,7 +18,6 @@
 
 ---
 
-<!-- ===== ABOUT ===== -->
 ### 👋 Hi! I’m Rendra
 - 🏫 Student at **SMP Muhammadiyah 5 Yogyakarta**
 - 🧠 Suka **Programming, Design, & Gaming**
@@ -33,7 +27,6 @@
 
 ---
 
-<!-- ===== TECH STACK ===== -->
 ### 🧰 Tech Stack
 <p>
   <img src="https://img.shields.io/badge/JavaScript-18181B?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
@@ -51,7 +44,6 @@
 
 ---
 
-<!-- ===== FEATURED PROJECTS ===== -->
 ### 📦 Featured Mini Projects
 > klik untuk lihat repositori
 
@@ -64,14 +56,13 @@
   </a>
 </p>
 
-**Ide Project Berikutnya (boleh di-fork dari template):**
+**Ide Project Berikutnya:**
 - 🎧 “Now Playing” widget sederhana ambil data dari API publik  
 - 📝 Notes App: CRUD + LocalStorage  
 - 🤖 Discord bot: auto-reply & moderation dasar  
 
 ---
 
-<!-- ===== STATS ===== -->
 ### 📊 GitHub Overview
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=pandhu-rendra&show_icons=true&count_private=true&theme=algolia" height="160"/>
@@ -88,21 +79,26 @@
 
 ---
 
-<!-- ===== CONTACT ===== -->
+### 🐍 Contribution Snake
+<p align="center">
+  <picture>
+    <!-- Dark mode -->
+    <source media="(prefers-color-scheme: dark)" 
+            srcset="https://raw.githubusercontent.com/pandhu-rendra/pandhu-rendra/output/github-snake-dark.svg?palette=github-dark&color_snake=%23b57edc&color_dots=%23e0e0ff,%239d7ef0,%238473e0,%236a65d8,%235354cc"/>
+    <!-- Light mode -->
+    <source media="(prefers-color-scheme: light)" 
+            srcset="https://raw.githubusercontent.com/pandhu-rendra/pandhu-rendra/output/github-snake.svg?color_snake=%23b57edc&color_dots=%23e0e0ff,%239d7ef0,%238473e0,%236a65d8,%235354cc"/>
+    <img alt="github contribution snake" 
+         src="https://raw.githubusercontent.com/pandhu-rendra/pandhu-rendra/output/github-snake.svg?color_snake=%23b57edc&color_dots=%23e0e0ff,%239d7ef0,%238473e0,%236a65d8,%235354cc"/>
+  </picture>
+</p>
+
+---
+
 ### ☕ Let’s Connect
 - 📬 DM Instagram: **@pandhu.rendra**
 - 💬 Discord: **renx.freya** (ID: 941844949824069692)
-- 🖇️ Linktree/Personal page (opsional): taruh di sini kalau sudah ada
-
----
 
 <p align="center">
   <sub>© 2025 Rendra • Last Edited: 14/08/2025</sub>
 </p>
-
-<!--
-Tips:
-1) Ganti/rapikan nama repo yang dipin di bagian Featured Projects.
-2) Kalau stats API kadang down, reload aja — ini layanan gratisan.
-3) Bisa tambahin "contribution snake" dengan GitHub Actions kalau mau makin rame.
--->
