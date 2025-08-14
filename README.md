@@ -129,10 +129,9 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 </p>
 
 ## 🎵 Now Playing
-<p align="center">
-  <!-- Live via external generator: ganti YOUR_SPOTIFY_UID -->
-  <img src="[https://spotify-github-profile.vercel.app/api/view?uid=31tip3g2ck3b224bhtd2g5l5pfyi&cover_image=true&theme=novatorem&bar_color=8A2BE2&show_offline=false&interchange=false](https://spotify-github-profile.vercel.app/api/view?uid=31tip3g2ck3b224bhtd2g5l5pfyi&cover_image=true&theme=novatorem&bar_color=8A2BE2&show_offline=false&interchange=false)" height="160" alt="Now Playing"/>
-</p>
+<!--SPOTIFY_START-->
+<p align="center">Loading…</p>
+<!--SPOTIFY_END-->
 
 ---
 
