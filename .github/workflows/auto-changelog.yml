@@ -1,0 +1,64 @@
+name: 📝 Auto Changelog (README)
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  changelog:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo (full history)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Build changelog (last 50 commits, no merges)
+        shell: bash
+        run: |
+          # Ambil 50 commit terakhir (tanpa merge), format tanggal ISO
+          git log --no-merges --pretty=format:'- %ad — %s (%h)' --date=format:'%Y-%m-%d' -n 50 > changelog.tmp
+
+          # Kalau kosong (repo baru), isi placeholder
+          if [[ ! -s changelog.tmp ]]; then
+            echo "- $(date -u +'%Y-%m-%d') — Initial commit (auto)" > changelog.tmp
+          fi
+
+      - name: Update README changelog block
+        shell: bash
+        run: |
+          if ! grep -q "<!--CHANGELOG_START-->" README.md; then
+            echo "Marker <!--CHANGELOG_START--> not found. Abort."
+            exit 1
+          fi
+          if ! grep -q "<!--CHANGELOG_END-->" README.md; then
+            echo "Marker <!--CHANGELOG_END--> not found. Abort."
+            exit 1
+          fi
+
+          # Sisipkan isi changelog.tmp di antara marker
+          awk '
+            BEGIN{inblk=0}
+            /<!--CHANGELOG_START-->/ {print; while ((getline line < "changelog.tmp") > 0) print line; inblk=1; next}
+            /<!--CHANGELOG_END-->/   {print; inblk=0; next}
+            !inblk {print}
+          ' README.md > README.tmp && mv README.tmp README.md
+
+      - name: Commit & push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          if [[ -n $(git status --porcelain) ]]; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add README.md
+            git commit -m "chore(readme): auto-update changelog"
+            git push
+          else
+            echo "No changes."
+          fi
