@@ -130,7 +130,12 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 
 ## 🎵 Now Playing
 <!--SPOTIFY_START-->
-<p align="center">Tidak ada data Spotify.</p>
+<p align="center">
+  <a href="https://open.spotify.com/track/6XKEElbr3cWmnUw6a5HRBV"><img src="https://i.scdn.co/image/ab67616d00001e02a053b3768be58a7117cc322b" height="96" style="border-radius:12px"/></a><br/>
+  <b><a href="https://open.spotify.com/track/6XKEElbr3cWmnUw6a5HRBV">Mati-Matian</a></b><br/>
+  Mahalini<br/>
+  <sub>Now Playing</sub>
+</p>
 <!--SPOTIFY_END-->
 
 ---
