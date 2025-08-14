@@ -2,11 +2,16 @@ name: "🎵 Spotify Now Playing (README)"
 
 on:
   schedule:
-    - cron: "*/5 * * * *"   # update tiap 3 menit
+    - cron: "*/5 * * * *"   # update tiap 5 menit UTC (otomatis juga 5 menit di WIB)
   workflow_dispatch: {}
 
 permissions:
   contents: write
+
+# Hindari job dobel kalau run sebelumnya belum selesai
+concurrency:
+  group: spotify-now
+  cancel-in-progress: true
 
 jobs:
   nowplaying:
@@ -14,6 +19,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      # Set timezone runner ke Asia/Jakarta
+      - name: Set timezone (WIB)
+        uses: szenius/set-timezone@v2.0
+        with:
+          timezoneLinux: "Asia/Jakarta"
 
       - name: Get access token from refresh token
         id: token
@@ -137,7 +148,7 @@ jobs:
             git config user.name  "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add README.md
-            git commit -m "chore(readme): pretty Spotify banner + 3min cron"
+            git commit -m "chore(readme): pretty Spotify banner (WIB) - $(date '+%Y-%m-%d %H:%M WIB')"
             git push
           else
             echo "No changes."
