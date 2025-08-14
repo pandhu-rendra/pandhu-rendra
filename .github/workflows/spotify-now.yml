@@ -2,7 +2,7 @@ name: "🎵 Spotify Now Playing (README)"
 
 on:
   schedule:
-    - cron: "*/3 * * * *"  # update tiap 15 menit
+    - cron: "*/3 * * * *"   # update tiap 3 menit
   workflow_dispatch: {}
 
 permissions:
@@ -43,16 +43,16 @@ jobs:
             cp cur.json src.json
           else
             SRC="recent"
-            curl -sS -H "Authorization: Bearer $ACCESS_TOKEN" 'https://api.spotify.com/v1/me/player/recently-played?limit=1' > src.json
+            curl -sS -H "Authorization: Bearer $ACCESS_TOKEN" \
+              'https://api.spotify.com/v1/me/player/recently-played?limit=1' > src.json
           fi
           echo "SRC=$SRC" >> "$GITHUB_ENV"
 
-      - name: Build fancy HTML card
+      - name: Build fancy HTML banner
         shell: bash
         run: |
           set -euo pipefail
-
-          # Extract fields (support "current" and "recent" payloads)
+          # Extract fields
           NAME="$(jq -r '.item.name // .items[0].track.name // empty' src.json)"
           URL="$(jq -r '.item.external_urls.spotify // .items[0].track.external_urls.spotify // empty' src.json)"
           ARTISTS="$(jq -r '[.item.artists[]?.name] // [.items[0].track.artists[]?.name] | join(", ")' src.json)"
@@ -65,12 +65,9 @@ jobs:
           esc () { printf '%s' "$1" | sed 's/&/\&amp;/g; s/</\&lt;/g; s/>/\&gt;/g'; }
           fmt () { ms=${1:-0}; s=$((ms/1000)); printf "%d:%02d" $((s/60)) $((s%60)); }
 
-          NAME_E="$(esc "$NAME")"
-          URL_E="$(esc "$URL")"
-          ARTISTS_E="$(esc "$ARTISTS")"
-          IMG_E="$(esc "$IMG")"
-          CURR="$(fmt "$PROG_MS")"
-          TOT="$(fmt "$DUR_MS")"
+          NAME_E="$(esc "$NAME")"; URL_E="$(esc "$URL")"
+          ARTISTS_E="$(esc "$ARTISTS")"; IMG_E="$(esc "$IMG")"
+          CURR="$(fmt "$PROG_MS")";     TOT="$(fmt "$DUR_MS")"
 
           # Progress percent (0..100)
           if [ "${DUR_MS:-0}" -gt 0 ]; then
@@ -89,22 +86,23 @@ jobs:
           [ "$IS_PLAYING" = "true" ] && STATUS="Now Playing"
           [ "${SRC:-recent}" = "current" ] && STATUS="Now Playing"
 
-          # Card HTML (inline styles agar tampil rapi di README)
+          # === Banner HTML (inline styles) ===
           {
             printf '<div align="center">\n'
-            printf '  <div style="display:inline-block; text-align:left; background:#120c1e; border:1px solid #281a4a; border-radius:16px; padding:14px 16px; max-width:520px; box-shadow:0 12px 30px rgba(138,43,226,.25);">\n'
-            printf '    <div style="display:flex; align-items:center; gap:14px;">\n'
-            printf '      <a href="%s"><img src="%s" alt="cover" height="88" style="border-radius:12px; box-shadow:0 6px 16px rgba(138,43,226,.35)"/></a>\n' "$URL_E" "$IMG_E"
+            printf '  <div style="display:inline-block; width:100%%; max-width:720px; background:linear-gradient(135deg,#0d0a1a,#1a1030); border:1px solid #2a1f47; border-radius:20px; padding:18px; box-shadow:0 16px 36px rgba(138,43,226,.28);">\n'
+            printf '    <div style="height:4px; background:linear-gradient(90deg,#8A2BE2,#BC7CFF); border-radius:999px; margin:-6px -6px 14px -6px;"></div>\n'
+            printf '    <div style="display:flex; align-items:center; gap:18px;">\n'
+            printf '      <a href="%s"><img src="%s" alt="cover" height="96" style="border-radius:14px; box-shadow:0 8px 20px rgba(138,43,226,.35)"/></a>\n' "$URL_E" "$IMG_E"
             printf '      <div style="line-height:1.35;">\n'
-            printf '        <div style="font-weight:700;"><a href="%s" style="color:#b58cff; text-decoration:none;">%s</a></div>\n' "$URL_E" "$NAME_E"
-            printf '        <div style="color:#cbb7ff; opacity:.85;">%s</div>\n' "$ARTISTS_E"
-            printf '        <span style="display:inline-block; margin-top:6px; padding:2px 8px; border-radius:9999px; background:#8A2BE2; color:#fff; font-size:12px;">%s</span>\n' "$STATUS"
+            printf '        <div style="font-weight:800; font-size:18px;"><a href="%s" style="color:#cdb8ff; text-decoration:none;">%s</a></div>\n' "$URL_E" "$NAME_E"
+            printf '        <div style="color:#b9a5ff; opacity:.9; margin-top:2px;">%s</div>\n' "$ARTISTS_E"
+            printf '        <span style="display:inline-block; margin-top:8px; padding:3px 10px; border-radius:9999px; background:#8A2BE2; color:#fff; font-size:12px; letter-spacing:.2px;">%s</span>\n' "$STATUS"
             printf '      </div>\n'
             printf '    </div>\n'
-            printf '    <div style="margin-top:12px; width:100%%; height:6px; background:#2a2140; border-radius:999px; overflow:hidden;">\n'
-            printf '      <div style="height:6px; width:%s%%; background:linear-gradient(90deg,#8A2BE2,#BC7CFF);"></div>\n' "$PCT"
+            printf '    <div style="margin-top:14px; width:100%%; height:8px; background:#2a2140; border-radius:999px; overflow:hidden;">\n'
+            printf '      <div style="height:8px; width:%s%%; background:linear-gradient(90deg,#8A2BE2,#BC7CFF);"></div>\n' "$PCT"
             printf '    </div>\n'
-            printf '    <div style="margin-top:6px; font-size:12px; color:#b9a5ff; opacity:.8;">%s / %s</div>\n' "$CURR" "$TOT"
+            printf '    <div style="display:flex; justify-content:space-between; margin-top:6px; font-size:12px; color:#b9a5ff; opacity:.82;"><span>%s</span><span>%s</span></div>\n' "$CURR" "$TOT"
             printf '  </div>\n'
             printf '</div>\n'
           } > spotify_snippet.html
@@ -128,7 +126,7 @@ jobs:
             git config user.name  "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add README.md
-            git commit -m "chore(readme): pretty Spotify card with progress"
+            git commit -m "chore(readme): pretty Spotify banner + 3min cron"
             git push
           else
             echo "No changes."
