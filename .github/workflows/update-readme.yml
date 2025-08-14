@@ -18,20 +18,17 @@ jobs:
       - name: Fetch random quote
         id: quote
         run: |
-          # Ambil 1 quote acak (format [{"q":"quote","a":"author"}])
           RESP=$(curl -s https://zenquotes.io/api/random)
           Q=$(echo "$RESP" | jq -r '.[0].q' | sed 's/[&]/\\&/g')
           A=$(echo "$RESP" | jq -r '.[0].a' | sed 's/[&]/\\&/g')
-          echo "text=> $Q"
-          echo "author=> $A"
           echo "QUOTE=$Q" >> $GITHUB_ENV
           echo "AUTHOR=$A" >> $GITHUB_ENV
 
-            - name: Update README (Quote + Last Updated)
+      - name: Update README (Quote + Last Updated)
         run: |
           TS="$(date -u +"%d/%m/%Y %H:%M UTC")"
 
-          # Replace Daily Quote block between markers
+          # Update Daily Quote
           awk -v q="$QUOTE" -v a="$AUTHOR" '
             BEGIN{inblk=0}
             /<!--QUOTE_START-->/ {print; print "> " q " — **" a "**"; inblk=1; next}
@@ -39,7 +36,7 @@ jobs:
             !inblk {print}
           ' README.md > README.tmp && mv README.tmp README.md
 
-          # Replace Last Updated marker (gunakan delimiter { } agar aman dari /)
+          # Update Last Updated (pakai { } sebagai delimiter)
           perl -0777 -pe "s{<!--LAST_UPDATE-->.*?<!--/LAST_UPDATE-->}{<!--LAST_UPDATE-->Last updated: ${TS}<!--/LAST_UPDATE-->}s" -i README.md
 
       - name: Commit & push
