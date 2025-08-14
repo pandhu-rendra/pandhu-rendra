@@ -1,7 +1,7 @@
-<!-- 🌌 Rendra's Modern GitHub Profile (Purple + Light Blue theme) -->
+<!-- 🌌 Rendra's GitHub (Purple + Light Blue) -->
 
 <h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=600&size=30&pause=1200&color=8A2BE2&center=true&vCenter=true&width=700&lines=Hi%2C+I'm+Rendra+%F0%9F%91%8B;Code+.+Create+.+Play+%F0%9F%8E%AE;Welcome+to+my+GitHub+Universe+%F0%9F%8C%8C" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=700&size=30&pause=1000&color=8A2BE2&center=true&vCenter=true&width=720&lines=Hi%2C+I'm+Rendra+%F0%9F%91%8B;Code+.+Create+.+Play+%F0%9F%8E%AE;Welcome+to+my+GitHub+Universe+%F0%9F%8C%8C" alt="Typing SVG" />
 </h1>
 
 <p align="center">
@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://discord.com/users/941844949824069692"><img alt="Discord" src="https://img.shields.io/badge/Discord-6E59F9?style=for-the-badge&logo=discord&logoColor=white"></a>
-  <a href="https://www.tiktok.com/@renx.freya"><img alt="TikTok" src="https://img.shields.io/badge/TikTok-0EA5E9?style=for-the-badge&logo=tiktok&logoColor=white"></a>
+  <a href="https://www.tiktok.com/@renx.freya"><img alt="TikTok" src="https://img.shields.io/badge/TikTok-38BDF8?style=for-the-badge&logo=tiktok&logoColor=white"></a>
   <a href="https://instagram.com/pandhu.rendra"><img alt="Instagram" src="https://img.shields.io/badge/Instagram-8A2BE2?style=for-the-badge&logo=instagram&logoColor=white"></a>
   <a href="https://github.com/pandhu-rendra"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-1F2937?style=for-the-badge&logo=github&logoColor=white"></a>
 </p>
@@ -31,7 +31,7 @@
 
 ## ⚡ Daily Quote
 <!--QUOTE_START-->
-> The golden opportunity you are seeking is in yourself. It is not in your environment; it is not in luck or chance, or the help of others; it is in yourself alone.  — **Orison Swett Marden**
+> Loading today's quote...
 <!--QUOTE_END-->
 
 ---
@@ -59,11 +59,6 @@
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=pandhu-rendra&repo=Auto-Responder&title_color=38BDF8&icon_color=38BDF8&text_color=94A3B8&bg_color=0D1117" />
   </a>
 </p>
-
-**Next Ideas**
-- 🎧 “Now Playing” widget (public API)  
-- 📝 Notes App + LocalStorage  
-- 🤖 Discord Bot (auto-reply & moderation)  
 
 ---
 
@@ -103,5 +98,5 @@
 - Discord: **renx.freya** (ID: 941844949824069692)
 
 <p align="center">
-  <sub>© 2025 Rendra • <span id="last-updated"><!--LAST_UPDATE-->Last updated: 14/08/2025 12:11 UTC<!--/LAST_UPDATE--></span></sub>
+  <sub>© 2025 Rendra • <span id="last-updated"><!--LAST_UPDATE-->Last updated: loading...<!--/LAST_UPDATE--></span></sub>
 </p>
