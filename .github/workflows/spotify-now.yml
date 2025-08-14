@@ -1,0 +1,108 @@
+name: 🎵 Spotify Now Playing (README)
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"  # tiap 15 menit biar hemat menit Actions
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  nowplaying:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Get access token from refresh token
+        id: token
+        env:
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+          SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+        run: |
+          set -e
+          AUTH=$(echo -n "$SPOTIFY_CLIENT_ID:$SPOTIFY_CLIENT_SECRET" | base64)
+          curl -s -X POST "https://accounts.spotify.com/api/token" \
+            -H "Authorization: Basic $AUTH" \
+            -H "Content-Type: application/x-www-form-urlencoded" \
+            -d "grant_type=refresh_token&refresh_token=$SPOTIFY_REFRESH_TOKEN" > token.json
+          ACCESS_TOKEN=$(jq -r '.access_token' token.json)
+          if [ -z "$ACCESS_TOKEN" ] || [ "$ACCESS_TOKEN" = "null" ]; then
+            echo "Failed to get access token"; cat token.json; exit 1
+          fi
+          echo "ACCESS_TOKEN=$ACCESS_TOKEN" >> $GITHUB_ENV
+
+      - name: Fetch currently playing (fallback to recently played)
+        run: |
+          set -e
+          # 1) currently playing
+          curl -s -w "%{http_code}" -o cur.json \
+            -H "Authorization: Bearer $ACCESS_TOKEN" \
+            "https://api.spotify.com/v1/me/player/currently-playing" > code.txt
+          CODE=$(cat code.txt)
+
+          if [ "$CODE" = "200" ]; then
+            SRC="current"
+            jq -r '.' cur.json > src.json
+          else
+            # 2) fallback: most recently played track
+            SRC="recent"
+            curl -s -H "Authorization: Bearer $ACCESS_TOKEN" \
+              "https://api.spotify.com/v1/me/player/recently-played?limit=1" > src.json
+          fi
+
+          # Extract fields (support both payload shapes)
+          NAME=$(jq -r '.item.name // .items[0].track.name // empty' src.json)
+          URL=$(jq -r '.item.external_urls.spotify // .items[0].track.external_urls.spotify // empty' src.json)
+          ARTISTS=$(jq -r '[.item.artists[]?.name] // [.items[0].track.artists[]?.name] | join(", ")' src.json)
+          IMG=$(jq -r '.item.album.images[1].url // .item.album.images[0].url // .items[0].track.album.images[1].url // .items[0].track.album.images[0].url // empty' src.json)
+          IS_PLAYING=$(jq -r '.is_playing // empty' src.json)
+
+          # Escape special chars for HTML
+          esc () { printf '%s' "$1" | sed 's/&/\&amp;/g; s/</\&lt;/g; s/>/\&gt;/g'; }
+          NAME_E=$(esc "$NAME"); ARTISTS_E=$(esc "$ARTISTS"); URL_E=$(esc "$URL"); IMG_E=$(esc "$IMG")
+
+          if [ -z "$NAME_E" ] || [ -z "$URL_E" ]; then
+            HTML='<p align="center">Tidak ada data Spotify.</p>'
+          else
+            STATUS="Now Playing"
+            [ "$SRC" = "recent" ] && STATUS="Recently Played"
+            [ "$IS_PLAYING" = "true" ] && STATUS="Now Playing"
+
+            HTML=$(cat <<EOF
+<p align="center">
+  <a href="$URL_E"><img src="$IMG_E" height="96" style="border-radius:12px"/></a><br/>
+  <b><a href="$URL_E">$NAME_E</a></b><br/>
+  $ARTISTS_E<br/>
+  <sub>$STATUS</sub>
+</p>
+EOF
+)
+          fi
+
+          printf '%s\n' "$HTML" > spotify_snippet.html
+
+      - name: Inject snippet into README
+        run: |
+          awk '
+            BEGIN{inblk=0}
+            /<!--SPOTIFY_START-->/ {print; while ((getline line < "spotify_snippet.html") > 0) print line; inblk=1; next}
+            /<!--SPOTIFY_END-->/   {print; inblk=0; next}
+            !inblk {print}
+          ' README.md > README.tmp && mv README.tmp README.md
+
+      - name: Commit & push if changed
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [[ -n $(git status --porcelain) ]]; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add README.md
+            git commit -m "chore(readme): update Spotify Now Playing"
+            git push
+          else
+            echo "No changes."
+          fi
