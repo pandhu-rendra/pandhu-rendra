@@ -134,9 +134,9 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
   <div style="display:inline-block; width:100%; max-width:760px; background:linear-gradient(135deg,#0d0a1a,#1a1030); border:1px solid #2a1f47; border-radius:20px; padding:18px; box-shadow:0 16px 36px rgba(138,43,226,.28);">
     <div style="height:4px; background:linear-gradient(90deg,#8A2BE2,#BC7CFF); border-radius:999px; margin:-6px -6px 14px -6px;"></div>
     <div style="display:flex; align-items:center; gap:18px;">
-      <a href="https://open.spotify.com/track/0ql6fgz8qk0pAEKrGeSppJ"><img src="https://i.scdn.co/image/ab67616d00001e02f3e3f888fbfcc916ecce50a9" alt="cover" height="96" style="border-radius:14px; box-shadow:0 8px 20px rgba(138,43,226,.35)"/></a>
+      <a href="https://open.spotify.com/track/1UPB5rYJ0bzn6mNSoAHrZC"><img src="https://i.scdn.co/image/ab67616d00001e027cd329ea4a204a8a47caf3d5" alt="cover" height="96" style="border-radius:14px; box-shadow:0 8px 20px rgba(138,43,226,.35)"/></a>
       <div style="flex:1; line-height:1.35;">
-        <div style="font-weight:800; font-size:18px;"><a href="https://open.spotify.com/track/0ql6fgz8qk0pAEKrGeSppJ" style="color:#cdb8ff; text-decoration:none;">bergema sampai selamanya</a></div>
+        <div style="font-weight:800; font-size:18px;"><a href="https://open.spotify.com/track/1UPB5rYJ0bzn6mNSoAHrZC" style="color:#cdb8ff; text-decoration:none;">You'll Be in My Heart</a></div>
         <div style="color:#b9a5ff; opacity:.9; margin-top:2px;"></div>
         <span style="display:inline-block; margin-top:8px; padding:3px 10px; border-radius:9999px; background:#8A2BE2; color:#fff; font-size:12px; letter-spacing:.2px;">Recently Played</span>
       </div>
@@ -148,7 +148,7 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
       <div style="height:8px; width:0%; background:linear-gradient(90deg,#8A2BE2,#BC7CFF);"></div>
     </div>
     <div style="display:flex; justify-content:space-between; margin-top:6px; font-size:12px; color:#b9a5ff; opacity:.82;">
-      <span>0:00</span><span>3:18</span>
+      <span>0:00</span><span>4:01</span>
     </div>
   </div>
 </div>
