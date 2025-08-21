@@ -47,7 +47,7 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 
 ## ⚡ Daily Quote
 <!--QUOTE_START-->
-> We cannot expect to be happy always... by experiencing evil as well as good we become wise. — **Hans Christian Andersen**
+> When everything seems to be going against you, remember that the airplane takes off against the wind, not with it.  — **Henry Ford**
 <!--QUOTE_END-->
 
 ## 💡 Dev Tip of the Day
