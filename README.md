@@ -134,9 +134,9 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
   <div style="display:inline-block; width:100%; max-width:760px; background:linear-gradient(135deg,#0d0a1a,#1a1030); border:1px solid #2a1f47; border-radius:20px; padding:18px; box-shadow:0 16px 36px rgba(138,43,226,.28);">
     <div style="height:4px; background:linear-gradient(90deg,#8A2BE2,#BC7CFF); border-radius:999px; margin:-6px -6px 14px -6px;"></div>
     <div style="display:flex; align-items:center; gap:18px;">
-      <a href="https://open.spotify.com/track/69vToJ9BMbbLlFZo7k7A7B"><img src="https://i.scdn.co/image/ab67616d00001e02f2d671c22b70e01b78a618a8" alt="cover" height="96" style="border-radius:14px; box-shadow:0 8px 20px rgba(138,43,226,.35)"/></a>
+      <a href="https://open.spotify.com/track/5Tb6K5YFvUNXREaGbDLn1m"><img src="https://i.scdn.co/image/ab67616d00001e02f035622d8fdf777b23e9a834" alt="cover" height="96" style="border-radius:14px; box-shadow:0 8px 20px rgba(138,43,226,.35)"/></a>
       <div style="flex:1; line-height:1.35;">
-        <div style="font-weight:800; font-size:18px;"><a href="https://open.spotify.com/track/69vToJ9BMbbLlFZo7k7A7B" style="color:#cdb8ff; text-decoration:none;">You Are The Reason</a></div>
+        <div style="font-weight:800; font-size:18px;"><a href="https://open.spotify.com/track/5Tb6K5YFvUNXREaGbDLn1m" style="color:#cdb8ff; text-decoration:none;">No Matter What</a></div>
         <div style="color:#b9a5ff; opacity:.9; margin-top:2px;">Calum Scott</div>
         <span style="display:inline-block; margin-top:8px; padding:3px 10px; border-radius:9999px; background:#8A2BE2; color:#fff; font-size:12px; letter-spacing:.2px;">Now Playing</span>
       </div>
@@ -145,10 +145,10 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
       </div>
     </div>
     <div style="margin-top:14px; width:100%; height:8px; background:#2a2140; border-radius:999px; overflow:hidden;">
-      <div style="height:8px; width:65%; background:linear-gradient(90deg,#8A2BE2,#BC7CFF);"></div>
+      <div style="height:8px; width:77%; background:linear-gradient(90deg,#8A2BE2,#BC7CFF);"></div>
     </div>
     <div style="display:flex; justify-content:space-between; margin-top:6px; font-size:12px; color:#b9a5ff; opacity:.82;">
-      <span>2:14</span><span>3:24</span>
+      <span>3:03</span><span>3:56</span>
     </div>
   </div>
 </div>
