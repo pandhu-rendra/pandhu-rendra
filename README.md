@@ -47,7 +47,7 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 
 ## ⚡ Daily Quote
 <!--QUOTE_START-->
-> Hope is important because it can make the present moment less difficult to bear. If we believe that tomorrow will be better, we can bear a hardship today. — **Thich Nhat Hanh**
+> Failure is not fatal, but failure to change might be. — **John Wooden**
 <!--QUOTE_END-->
 
 ## 💡 Dev Tip of the Day
@@ -198,7 +198,7 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 
 <!-- Last-updated (auto from workflow) -->
 <p align="right">
-  <sub><span id="last-updated"><!--LAST_UPDATE-->Last updated: 30/08/2025 21:21 WIB<!--/LAST_UPDATE--></span></sub>
+  <sub><span id="last-updated"><!--LAST_UPDATE-->Last updated: 30/08/2025 21:34 WIB<!--/LAST_UPDATE--></span></sub>
 </p>
 
 <!-- Bottom wave accent (animated, purple) -->
