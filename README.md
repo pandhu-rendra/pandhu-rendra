@@ -134,10 +134,10 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
   <div style="display:inline-block; width:100%; max-width:760px; background:linear-gradient(135deg,#0d0a1a,#1a1030); border:1px solid #2a1f47; border-radius:20px; padding:18px; box-shadow:0 16px 36px rgba(138,43,226,.28);">
     <div style="height:4px; background:linear-gradient(90deg,#8A2BE2,#BC7CFF); border-radius:999px; margin:-6px -6px 14px -6px;"></div>
     <div style="display:flex; align-items:center; gap:18px;">
-      <a href="https://open.spotify.com/track/6PqWdGIYq5xdLaa4zCZfRp"><img src="https://i.scdn.co/image/ab67616d00001e02d34a0632f6861e8875d6899b" alt="cover" height="96" style="border-radius:14px; box-shadow:0 8px 20px rgba(138,43,226,.35)"/></a>
+      <a href="https://open.spotify.com/track/1Ib0UNLoqBEWTmBvXeFSni"><img src="https://i.scdn.co/image/ab67616d00001e02f0a7efc94687cc049b821529" alt="cover" height="96" style="border-radius:14px; box-shadow:0 8px 20px rgba(138,43,226,.35)"/></a>
       <div style="flex:1; line-height:1.35;">
-        <div style="font-weight:800; font-size:18px;"><a href="https://open.spotify.com/track/6PqWdGIYq5xdLaa4zCZfRp" style="color:#cdb8ff; text-decoration:none;">Jatuh Suka</a></div>
-        <div style="color:#b9a5ff; opacity:.9; margin-top:2px;">Tulus</div>
+        <div style="font-weight:800; font-size:18px;"><a href="https://open.spotify.com/track/1Ib0UNLoqBEWTmBvXeFSni" style="color:#cdb8ff; text-decoration:none;">Pemuja Rahasia</a></div>
+        <div style="color:#b9a5ff; opacity:.9; margin-top:2px;">Sheila On 7</div>
         <span style="display:inline-block; margin-top:8px; padding:3px 10px; border-radius:9999px; background:#8A2BE2; color:#fff; font-size:12px; letter-spacing:.2px;">Now Playing</span>
       </div>
       <div style="display:flex; align-items:center; gap:14px; background:#1b1230; border:1px solid #2a1f47; padding:8px 12px; border-radius:9999px;">
@@ -145,10 +145,10 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
       </div>
     </div>
     <div style="margin-top:14px; width:100%; height:8px; background:#2a2140; border-radius:999px; overflow:hidden;">
-      <div style="height:8px; width:35%; background:linear-gradient(90deg,#8A2BE2,#BC7CFF);"></div>
+      <div style="height:8px; width:10%; background:linear-gradient(90deg,#8A2BE2,#BC7CFF);"></div>
     </div>
     <div style="display:flex; justify-content:space-between; margin-top:6px; font-size:12px; color:#b9a5ff; opacity:.82;">
-      <span>1:23</span><span>3:55</span>
+      <span>0:23</span><span>3:52</span>
     </div>
   </div>
 </div>
