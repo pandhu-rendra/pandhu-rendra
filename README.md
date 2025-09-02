@@ -134,10 +134,10 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
   <div style="display:inline-block; width:100%; max-width:760px; background:linear-gradient(135deg,#0d0a1a,#1a1030); border:1px solid #2a1f47; border-radius:20px; padding:18px; box-shadow:0 16px 36px rgba(138,43,226,.28);">
     <div style="height:4px; background:linear-gradient(90deg,#8A2BE2,#BC7CFF); border-radius:999px; margin:-6px -6px 14px -6px;"></div>
     <div style="display:flex; align-items:center; gap:18px;">
-      <a href="https://open.spotify.com/track/5Vl0qvoR05RwOamV73C1Av"><img src="https://i.scdn.co/image/ab67616d00001e02d1f62c1b2133e298c08cb49a" alt="cover" height="96" style="border-radius:14px; box-shadow:0 8px 20px rgba(138,43,226,.35)"/></a>
+      <a href="https://open.spotify.com/track/6qwMjOsx755Qo3RRngrlQZ"><img src="https://i.scdn.co/image/ab67616d00001e02dc5714c1a0db9a512d8933e2" alt="cover" height="96" style="border-radius:14px; box-shadow:0 8px 20px rgba(138,43,226,.35)"/></a>
       <div style="flex:1; line-height:1.35;">
-        <div style="font-weight:800; font-size:18px;"><a href="https://open.spotify.com/track/5Vl0qvoR05RwOamV73C1Av" style="color:#cdb8ff; text-decoration:none;">Waktu Yang Salah</a></div>
-        <div style="color:#b9a5ff; opacity:.9; margin-top:2px;">Fiersa Besari, Thantri Sundari</div>
+        <div style="font-weight:800; font-size:18px;"><a href="https://open.spotify.com/track/6qwMjOsx755Qo3RRngrlQZ" style="color:#cdb8ff; text-decoration:none;">Yang Lain Boleh Hilang Asal Kau Jangan - Live Acoustic &amp; Choir Version</a></div>
+        <div style="color:#b9a5ff; opacity:.9; margin-top:2px;">Mitty Zasia, Paramadaya Choir and Friends</div>
         <span style="display:inline-block; margin-top:8px; padding:3px 10px; border-radius:9999px; background:#8A2BE2; color:#fff; font-size:12px; letter-spacing:.2px;">Now Playing</span>
       </div>
       <div style="display:flex; align-items:center; gap:14px; background:#1b1230; border:1px solid #2a1f47; padding:8px 12px; border-radius:9999px;">
@@ -145,10 +145,10 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
       </div>
     </div>
     <div style="margin-top:14px; width:100%; height:8px; background:#2a2140; border-radius:999px; overflow:hidden;">
-      <div style="height:8px; width:64%; background:linear-gradient(90deg,#8A2BE2,#BC7CFF);"></div>
+      <div style="height:8px; width:82%; background:linear-gradient(90deg,#8A2BE2,#BC7CFF);"></div>
     </div>
     <div style="display:flex; justify-content:space-between; margin-top:6px; font-size:12px; color:#b9a5ff; opacity:.82;">
-      <span>3:30</span><span>5:23</span>
+      <span>3:36</span><span>4:22</span>
     </div>
   </div>
 </div>
