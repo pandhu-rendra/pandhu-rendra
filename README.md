@@ -145,10 +145,10 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
       </div>
     </div>
     <div style="margin-top:14px; width:100%; height:8px; background:#2a2140; border-radius:999px; overflow:hidden;">
-      <div style="height:8px; width:17%; background:linear-gradient(90deg,#8A2BE2,#BC7CFF);"></div>
+      <div style="height:8px; width:86%; background:linear-gradient(90deg,#8A2BE2,#BC7CFF);"></div>
     </div>
     <div style="display:flex; justify-content:space-between; margin-top:6px; font-size:12px; color:#b9a5ff; opacity:.82;">
-      <span>0:38</span><span>3:42</span>
+      <span>3:11</span><span>3:42</span>
     </div>
   </div>
 </div>
