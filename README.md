@@ -47,7 +47,7 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 
 ## ⚡ Daily Quote
 <!--QUOTE_START-->
-> TEAMWORK: the fuel that allows common people attain uncommon results. — **Andrew Carnegie**
+> You play the hand you're dealt. I think the game's worthwhile.   — **Christopher Reeve**
 <!--QUOTE_END-->
 
 ## 💡 Dev Tip of the Day
@@ -198,7 +198,7 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 
 <!-- Last-updated (auto from workflow) -->
 <p align="right">
-  <sub><span id="last-updated"><!--LAST_UPDATE-->Last updated: 15/09/2025 06:49 WIB<!--/LAST_UPDATE--></span></sub>
+  <sub><span id="last-updated"><!--LAST_UPDATE-->Last updated: 15/09/2025 07:40 WIB<!--/LAST_UPDATE--></span></sub>
 </p>
 
 <!-- Bottom wave accent (animated, purple) -->
