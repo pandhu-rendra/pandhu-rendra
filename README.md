@@ -47,12 +47,12 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 
 ## ⚡ Daily Quote
 <!--QUOTE_START-->
-> You are not only responsible for what you say, but also for what you do not say.  — **Martin Luther**
+> Of all men's miseries the bitterest is this: to know so much and to have control over nothing.  — **Herodotus**
 <!--QUOTE_END-->
 
 ## 💡 Dev Tip of the Day
 <!--TIP_START-->
-> Use console.log() intentionally; remove or group them after debugging.
+> Sketch UI on paper before you code—it saves time.
 <!--TIP_END-->
 
 ---
@@ -198,7 +198,7 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 
 <!-- Last-updated (auto from workflow) -->
 <p align="right">
-  <sub><span id="last-updated"><!--LAST_UPDATE-->Last updated: 24/09/2025 16:39 WIB<!--/LAST_UPDATE--></span></sub>
+  <sub><span id="last-updated"><!--LAST_UPDATE-->Last updated: 24/09/2025 16:49 WIB<!--/LAST_UPDATE--></span></sub>
 </p>
 
 <!-- Bottom wave accent (animated, purple) -->
