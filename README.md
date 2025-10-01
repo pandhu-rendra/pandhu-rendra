@@ -47,12 +47,12 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 
 ## ⚡ Daily Quote
 <!--QUOTE_START-->
-> It is far easier to start something than it is to finish it. — **Amelia Earhart**
+> The key to success is failure. — **Michael Jordan**
 <!--QUOTE_END-->
 
 ## 💡 Dev Tip of the Day
 <!--TIP_START-->
-> Use console.log() intentionally; remove or group them after debugging.
+> Read error messages slowly; they often tell you the exact fix.
 <!--TIP_END-->
 
 ---
@@ -198,7 +198,7 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 
 <!-- Last-updated (auto from workflow) -->
 <p align="right">
-  <sub><span id="last-updated"><!--LAST_UPDATE-->Last updated: 01/10/2025 10:56 WIB<!--/LAST_UPDATE--></span></sub>
+  <sub><span id="last-updated"><!--LAST_UPDATE-->Last updated: 01/10/2025 11:27 WIB<!--/LAST_UPDATE--></span></sub>
 </p>
 
 <!-- Bottom wave accent (animated, purple) -->
