@@ -47,12 +47,12 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 
 ## ⚡ Daily Quote
 <!--QUOTE_START-->
-> Embrace the life you have and stop wishing that you could be someone else. — **Joyce Meyer**
+> If you want to make God laugh, tell him about your plans.  — **Woody Allen**
 <!--QUOTE_END-->
 
 ## 💡 Dev Tip of the Day
 <!--TIP_START-->
-> Use meaningful commit messages; they are future-you's documentation.
+> Learn basics of Flexbox and Grid—80% of layout pain disappears.
 <!--TIP_END-->
 
 ---
@@ -198,7 +198,7 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 
 <!-- Last-updated (auto from workflow) -->
 <p align="right">
-  <sub><span id="last-updated"><!--LAST_UPDATE-->Last updated: 06/10/2025 21:55 WIB<!--/LAST_UPDATE--></span></sub>
+  <sub><span id="last-updated"><!--LAST_UPDATE-->Last updated: 06/10/2025 22:19 WIB<!--/LAST_UPDATE--></span></sub>
 </p>
 
 <!-- Bottom wave accent (animated, purple) -->
