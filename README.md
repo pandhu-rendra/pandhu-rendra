@@ -47,12 +47,12 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 
 ## ⚡ Daily Quote
 <!--QUOTE_START-->
-> Others have seen what is and asked why. I have seen what could be and asked why not — **Pablo Picasso**
+> Do good, live in the most positive and joyful way possible every day. — **Roy T. Bennett**
 <!--QUOTE_END-->
 
 ## 💡 Dev Tip of the Day
 <!--TIP_START-->
-> Sketch UI on paper before you code—it saves time.
+> Learn basics of Flexbox and Grid—80% of layout pain disappears.
 <!--TIP_END-->
 
 ---
@@ -198,7 +198,7 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 
 <!-- Last-updated (auto from workflow) -->
 <p align="right">
-  <sub><span id="last-updated"><!--LAST_UPDATE-->Last updated: 13/10/2025 12:48 WIB<!--/LAST_UPDATE--></span></sub>
+  <sub><span id="last-updated"><!--LAST_UPDATE-->Last updated: 13/10/2025 12:59 WIB<!--/LAST_UPDATE--></span></sub>
 </p>
 
 <!-- Bottom wave accent (animated, purple) -->
