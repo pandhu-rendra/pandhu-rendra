@@ -134,9 +134,9 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
   <div style="display:inline-block; width:100%; max-width:760px; background:linear-gradient(135deg,#0d0a1a,#1a1030); border:1px solid #2a1f47; border-radius:20px; padding:18px; box-shadow:0 16px 36px rgba(138,43,226,.28);">
     <div style="height:4px; background:linear-gradient(90deg,#8A2BE2,#BC7CFF); border-radius:999px; margin:-6px -6px 14px -6px;"></div>
     <div style="display:flex; align-items:center; gap:18px;">
-      <a href="https://open.spotify.com/track/0HMjXBAZmSYOTTi33WpMso"><img src="https://i.scdn.co/image/ab67616d00001e02241e4fe75732c9c4b49b94c3" alt="cover" height="96" style="border-radius:14px; box-shadow:0 8px 20px rgba(138,43,226,.35)"/></a>
+      <a href="https://open.spotify.com/track/1HNkqx9Ahdgi1Ixy2xkKkL"><img src="https://i.scdn.co/image/ab67616d00001e0213b3e37318a0c247b550bccd" alt="cover" height="96" style="border-radius:14px; box-shadow:0 8px 20px rgba(138,43,226,.35)"/></a>
       <div style="flex:1; line-height:1.35;">
-        <div style="font-weight:800; font-size:18px;"><a href="https://open.spotify.com/track/0HMjXBAZmSYOTTi33WpMso" style="color:#cdb8ff; text-decoration:none;">History</a></div>
+        <div style="font-weight:800; font-size:18px;"><a href="https://open.spotify.com/track/1HNkqx9Ahdgi1Ixy2xkKkL" style="color:#cdb8ff; text-decoration:none;">Photograph</a></div>
         <div style="color:#b9a5ff; opacity:.9; margin-top:2px;"></div>
         <span style="display:inline-block; margin-top:8px; padding:3px 10px; border-radius:9999px; background:#8A2BE2; color:#fff; font-size:12px; letter-spacing:.2px;">Recently Played</span>
       </div>
@@ -148,7 +148,7 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
       <div style="height:8px; width:0%; background:linear-gradient(90deg,#8A2BE2,#BC7CFF);"></div>
     </div>
     <div style="display:flex; justify-content:space-between; margin-top:6px; font-size:12px; color:#b9a5ff; opacity:.82;">
-      <span>0:00</span><span>3:07</span>
+      <span>0:00</span><span>4:18</span>
     </div>
   </div>
 </div>
