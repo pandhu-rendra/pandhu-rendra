@@ -47,7 +47,7 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 
 ## ⚡ Daily Quote
 <!--QUOTE_START-->
-> Success is the progressive realization of a worthy goal or ideal. — **Earl Nightingale**
+> Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver. — **Ayn Rand**
 <!--QUOTE_END-->
 
 ## 💡 Dev Tip of the Day
@@ -198,7 +198,7 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 
 <!-- Last-updated (auto from workflow) -->
 <p align="right">
-  <sub><span id="last-updated"><!--LAST_UPDATE-->Last updated: 14/12/2025 18:39 WIB<!--/LAST_UPDATE--></span></sub>
+  <sub><span id="last-updated"><!--LAST_UPDATE-->Last updated: 14/12/2025 18:50 WIB<!--/LAST_UPDATE--></span></sub>
 </p>
 
 <!-- Bottom wave accent (animated, purple) -->
