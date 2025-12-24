@@ -47,12 +47,12 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 
 ## ⚡ Daily Quote
 <!--QUOTE_START-->
-> Be Brave and Take Risks: You need to have faith in yourself. Be brave and take risks. You don't have to have it all figured out to move forward. — **Roy T. Bennett**
+> There is no greatness where there is not simplicity, goodness, and truth. — **Leo Tolstoy**
 <!--QUOTE_END-->
 
 ## 💡 Dev Tip of the Day
 <!--TIP_START-->
-> Read error messages slowly; they often tell you the exact fix.
+> Break problems into tiny steps; ship the smallest useful version first.
 <!--TIP_END-->
 
 ---
@@ -198,7 +198,7 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 
 <!-- Last-updated (auto from workflow) -->
 <p align="right">
-  <sub><span id="last-updated"><!--LAST_UPDATE-->Last updated: 24/12/2025 10:40 WIB<!--/LAST_UPDATE--></span></sub>
+  <sub><span id="last-updated"><!--LAST_UPDATE-->Last updated: 24/12/2025 11:21 WIB<!--/LAST_UPDATE--></span></sub>
 </p>
 
 <!-- Bottom wave accent (animated, purple) -->
