@@ -47,7 +47,7 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 
 ## ⚡ Daily Quote
 <!--QUOTE_START-->
-> Meditate. It won't be fun but it will surface what you need to deal with. — **Naval Ravikant**
+> I try more and more to be myself, caring relatively little whether people approve or disapprove. — **Vincent van Gogh**
 <!--QUOTE_END-->
 
 ## 💡 Dev Tip of the Day
@@ -198,7 +198,7 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 
 <!-- Last-updated (auto from workflow) -->
 <p align="right">
-  <sub><span id="last-updated"><!--LAST_UPDATE-->Last updated: 14/01/2026 04:57 WIB<!--/LAST_UPDATE--></span></sub>
+  <sub><span id="last-updated"><!--LAST_UPDATE-->Last updated: 14/01/2026 05:29 WIB<!--/LAST_UPDATE--></span></sub>
 </p>
 
 <!-- Bottom wave accent (animated, purple) -->
