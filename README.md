@@ -47,7 +47,7 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 
 ## ⚡ Daily Quote
 <!--QUOTE_START-->
-> Be still when you have nothing to say; when genuine passion moves you, say what you've got to say, and say it hot. — **D. H. Lawrence**
+> Adventure is worthwhile in itself. — **Amelia Earhart**
 <!--QUOTE_END-->
 
 ## 💡 Dev Tip of the Day
@@ -198,7 +198,7 @@ Currently learning **JavaScript**, **HTML**, **CSS**, and **Python**.
 
 <!-- Last-updated (auto from workflow) -->
 <p align="right">
-  <sub><span id="last-updated"><!--LAST_UPDATE-->Last updated: 13/02/2026 08:18 WIB<!--/LAST_UPDATE--></span></sub>
+  <sub><span id="last-updated"><!--LAST_UPDATE-->Last updated: 13/02/2026 10:55 WIB<!--/LAST_UPDATE--></span></sub>
 </p>
 
 <!-- Bottom wave accent (animated, purple) -->
