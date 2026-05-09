@@ -25,7 +25,7 @@
 ## 🧰 Toolbox
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=javascript,html,css,python,git,vscode,figma" />
+  <img src="https://skillicons.dev/icons?i=bash,bootstrap,css,gcp,git,vscode,github,discord,gmail,python,html,typescript,linux,md,mongodb,mysql,nextjs,react,nodejs,redis,tailwind,vercel&perLine=6" />
 </p>
 
 ## 📫 Connect with Me!
